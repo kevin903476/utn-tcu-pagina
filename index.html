@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/principal.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/57b7a3c220.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./CSS/stiles.css">
+  <title>Principal</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <img src="./images/Logotipo TCU blanco.png" style="width: 11%; height: auto;">
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="./principal.html">Inicio</a></li>
+        <li>
+          <a href="#">Proyecto</a>
+          <!-- Submenú -->
+          <ul class="sub-menu">
+            <li><a href="./HTMLS/sigaru.html">Sigaru</a></li>
+            <li><a href="./HTMLS/tutoriales.html">Tutoriales</a></li>
+            <li><a href="./HTMLS/cartografia.html">Cartografia</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Estudiantes</a>
+          <ul class="sub-menu">
+            <li><a href="./HTMLS/cuentas.html">Cuenta</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSegqGsI6QiB6x8ia3ti4WMJG3drLg2lw0n2jTUocH0RsgPqcA/viewform" target="_blank" rel="noopener noreferrer">Bitacora</a></li>
+            <li><a href="./HTMLS/informe.html">Informe</a></li>
+          </ul>
+        </li>
+        <li><a href="./HTMLS/nosotros.html">Nosotros</a></li>
+        <li><a href="./HTMLS/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="./images/arb1.jpeg" class="d-block w-100" alt="..." id="img1">
+      </div>
+
+      <div class="carousel-item">
+        <img src="./images/arb2.jpeg" class="d-block w-100" alt="..." id="img2">
+      </div>
+
+      <div class="carousel-item">
+        <img src="./images/arb1.jpeg" class="d-block w-100" alt="..." id="img3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <section class="productostotal">
+    <section class="products">
+
+      <h2 style="color: white;">Medidas de Seguridad</h2>
+      <div class="all-products">
+        <div class="product">
+          <img src="./images/casco.png" style="width: 400px; height: 600px;" class="imgs">
+        </div>
+        <div class="product">
+          <img src="./images/gafas.png" style="width: 400px; height: 600px;" class="imgs">
+        </div>
+        <div class="product">
+          <img src="./images/tapones.png" style="width: 400px; height: 600px;" class="imgs">
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="all-products">
+        <div class="product">
+          <img src="./images/guantes.png" style="width: 400px; height: 600px;" class="imgs">
+        </div>
+        <div class="product">
+          <img src="./images/chaleco.png" style="width: 400px; height: 600px;" class="imgs">
+        </div>
+        <div class="product">
+          <img src="./images/mangas.png" style="width: 400px; height: 600px;" class="imgs">
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="all-products">
+        <div class="product">
+          <img src="./images/botas.png" style="width: 400px; height: 600px;" class="imgs">
+        </div>
+        <div class="product">
+          <img src="./images/mascarilla.png" style="width: 400px; height: 600px;" class="imgs">
+        </div>
+        <div class="product">
+          <img src="./images/identidad.png" style="width: 400px; height: 600px;" class="imgs">
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <div class="footer-bottom">
+    <p>Trabajo Comunal Universitario | UTN </p>
+  </div>
+
+  <script src="./JS/responsive.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
