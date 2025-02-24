@@ -6,6 +6,16 @@
   font-family: sans-serif !important;
 }
 
+body{
+  margin: 0;
+  
+  background-image: url("../images/background-two.jpg"); /* Cambia 'background.jpg' por la ruta de tu imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+}
+
 ñ {
   background-color: #234175;
   background-color: #2A8BC6;
@@ -26,11 +36,14 @@
   }
 }
 
+#contenido-adicional {
+  position: relative; /* Esto es crucial */
+  min-height: 600px; /* Dale una altura mínima para que se vean las hojas */
+}
+
 .productostotal {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.573), rgba(5, 7, 12, 0.573));
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
+  position: relative;
+  z-index: 2; /* Por encima de las hojas */
 }
 
 
