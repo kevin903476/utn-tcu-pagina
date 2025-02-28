@@ -9,7 +9,7 @@ header.innerHTML = `
           <div class="line3"></div>
         </div>
         <ul class="nav-list">
-          <li><a href="../principal.html">Inicio</a></li>
+          <li><a href="../index.html">Inicio</a></li>
           <li>
            <a href="#">Proyecto</a>
            <ul class="sub-menu">
