@@ -7,7 +7,10 @@ header {
     background-color: #333;
     z-index: 1000;
 }
-
+#logo-utn{
+    width: 8%;
+    height: auto;
+}
 a.logo {
     color: #fff;
     font-weight: 600;
@@ -22,12 +25,18 @@ a.logo {
 li a {
     color: white;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
+    padding: 10px 15px; /* Añadir padding para dar espacio alrededor del texto */
+    border-radius: 15px; /* Mantener el borde redondeado */
+    transition: color 300ms ease, background-color 300ms ease, opacity 300ms ease, transform 300ms ease; /* Transiciones específicas */
+    background-color: transparent; /* Fondo transparente por defecto */
 }
 
-a:hover {
-    opacity: 0.8;
-    color: #76797C;
+li a:hover {
+    opacity: 1; /* Mantener la opacidad al 100% */
+    color: #ffffff; /* Color del texto al pasar el mouse */
+    background-color: #234175; /* Color de fondo más armonioso */
+    transform: scale(1.05); /* Efecto de escala */
 }
 
 
@@ -35,13 +44,14 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #002F6F;
-    height: 12vh;
+    background: #012169;
+    height: 18vh;
     top: 0;
     position: fixed;
     width: 100%;
     z-index: 10;
+    border-end-end-radius: 40px;
+    border-end-start-radius: 40px;
 }
 
 .nav-list {
@@ -50,14 +60,15 @@ nav {
 }
 
 .nav-list li {
-    font-size: 4vh;
-    letter-spacing: 3px;
+    
+    font-size: 20px;
     margin-left: 32px;
     display: flex;
     justify-content: center;
     margin-top: 12px;
     padding: 10px;
-    font-weight: 400;
+    
+    font-weight: bold;
 }
 
 .mobile-menu {
@@ -76,20 +87,22 @@ nav {
 .nav-list.active {
     transform: translateX(0);
     height: auto;
-    background-color: #002F6F;
+    background-color: #012169;
 }
 
 /* Estilo para el submenú */
 .nav-list .sub-menu {
-    display: none;
+    opacity: 0; /* Comienza oculto */
+    visibility: hidden; /* No es visible */
     position: absolute;
-    background-color: #234175;
+    background-color: #012169;
     list-style: none;
     padding: 0;
     margin: 0;
     width: 150px;
     top: 80%;
     text-align: left; /* Alineación del texto a la izquierda */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transición suave */
 }
 
 /* Estilo para los elementos de la lista del submenú */
@@ -109,16 +122,18 @@ nav {
     width: 100%; 
     display: block; 
     box-sizing: border-box;
+   
 }
 
 /* Mostrar el submenú al pasar el ratón sobre el elemento principal */
 .nav-list li:hover .sub-menu {
-    display: block;
+    opacity: 1; /* Hacerlo visible */
+    visibility: visible; /* Cambiar a visible */
 }
 
 /* Cambiar el color de fondo al pasar el ratón sobre los enlaces del submenú */
 .nav-list .sub-menu li a:hover {
-    background-color: darkblue;
+    background-color: #234175;
 }
 
 
@@ -135,6 +150,15 @@ nav {
 }
 
 @media (max-width: 980px) {
+
+    #logo-utn{
+        width: 18%;
+    }
+
+    li a {
+
+        font-size: 25px;
+    }
     body {
         overflow-x: hidden;
         height: 100%;
@@ -143,32 +167,34 @@ nav {
         margin-bottom: 0;
         width: 100%;
     }
+    .sub-menu-phone{
+        transition: all 300ms;
+    }
+    .sub-menu-phone:hover{
+        margin-bottom: 200px;
+    }
+   
+    .margin-top{
+        margin-top: 200px;
+    }
+    #sub-menu-ul{
+        margin-top: 14px;
+    }
 
     .nav-list {
-        z-index: 10;
-        position: fixed;
-        top: 9vh;
-        bottom: 0;
-        right: 0;
-        width: 50vw;
-        height: 100%;
-        background: #002F6F;
-        flex-direction: column;
-        align-items: center;
-        justify-content: safe;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-        margin-bottom: 0;
+        margin-top: 10px;
+        width: 190px; /* Aumentar el ancho del menú */
+        height: auto; /* Permitir que el menú ajuste su altura */
+        padding: 20px; /* Añadir padding para un mejor espaciado */
+        overflow-y: scroll; /* Permite el desplazamiento vertical */
+        overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+        
+        max-height: 100vh; /* Limitar la altura máxima */
     }
 
-    .nav-list li {
-        margin-left: 0;
-        opacity: 0;
-        font-size: 3vh;
-        margin-top: 30%;
-        margin-left: 5px;
-        font-weight: 400;
-    }
+   
+
+    
 
     .mobile-menu {
         display: block;
@@ -190,6 +216,33 @@ nav {
     word-spacing: 2px;
     text-transform: capitalize;
 }
+
+/* Ajustar el tamaño del wave */
+.wave-container {
+    position: relative;
+    width: 100%; /* Asegurar que ocupa todo el ancho */
+     /* Ajustar la altura según necesites */
+    overflow: hidden;
+    margin-top: 8vh; /* Ajusta según la altura del nav */
+}
+
+.wave-container svg {
+    display: block;
+    width: 100vw; /* Asegurar que cubre todo el ancho */
+    height: 100%;
+}
+
+
+/* Evitar que el nav tape el wave */
+@media (max-width: 980px) {
+
+    .wave-container {
+        margin-top: 12vh; /* Ajustar para evitar que el wave quede tapado */
+    }
+}
+
+
+
 
 @media only screen and (max-width: 768px) {
     footer {
