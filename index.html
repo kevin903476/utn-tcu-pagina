@@ -1,165 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/petalos-style.css" />
+    <link rel="stylesheet" href="./CSS/principal.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/57b7a3c220.js"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./CSS/petalos-style.css">
-  <link rel="stylesheet" href="./CSS/principal.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/57b7a3c220.js" crossorigin="anonymous"></script>
-  
-  <link rel="stylesheet" href="./CSS/stiles.css">
-  <title>Principal</title>
-</head>
+    <link rel="stylesheet" href="./CSS/nav-style.css" />
+    <title>Principal</title>
+  </head>
 
-<body>
-
-  <header>
-    <nav>
-      <img src="./images/Logotipo TCU blanco.png" style="width: 11%; height: auto;">
-      <div class="mobile-menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+  <body>
+    <header>
+      <nav>
+        <img id="logo-utn"
+          src="./images/logo-utn.png"  
+        />
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="./index.html">Inicio</a></li>
+          <li class="sub-menu-phone">
+            <a href="#">Proyecto</a>
+            <!-- Submenú -->
+            <ul id="sub-menu-ul" class="sub-menu">
+              <li><a href="./HTMLS/sigaru.html">Sigaru</a></li>
+              <li><a href="./HTMLS/tutoriales.html">Tutoriales</a></li>
+              <li><a href="./HTMLS/cartografia.html">Cartografia</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu-phone">
+            <a href="#">Estudiantes</a>
+            <ul id="sub-menu-ul" class="sub-menu">
+              <li ><a href="./HTMLS/cuentas.html">Cuenta</a></li>
+              <li>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSegqGsI6QiB6x8ia3ti4WMJG3drLg2lw0n2jTUocH0RsgPqcA/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Bitacora</a
+                >
+              </li>
+              <li><a href="./HTMLS/informe.html">Informe</a></li>
+            </ul>
+          </li>
+          <li><a href="./HTMLS/nosotros.html">Nosotros</a></li>
+          <li><a href="./HTMLS/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- <div class="wave-container">
+        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(1, 33, 105, 1)" offset="0%"></stop><stop stop-color="rgba(1, 33, 105, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L30,10C60,10,120,10,180,20C240,30,300,50,360,61.7C420,73,480,77,540,68.3C600,60,660,40,720,31.7C780,23,840,27,900,35C960,43,1020,57,1080,61.7C1140,67,1200,63,1260,58.3C1320,53,1380,47,1440,36.7C1500,27,1560,13,1620,10C1680,7,1740,13,1800,26.7C1860,40,1920,60,1980,61.7C2040,63,2100,47,2160,33.3C2220,20,2280,10,2340,20C2400,30,2460,60,2520,68.3C2580,77,2640,63,2700,61.7C2760,60,2820,70,2880,63.3C2940,57,3000,33,3060,25C3120,17,3180,23,3240,25C3300,27,3360,23,3420,26.7C3480,30,3540,40,3600,48.3C3660,57,3720,63,3780,70C3840,77,3900,83,3960,71.7C4020,60,4080,30,4140,28.3C4200,27,4260,53,4290,66.7L4320,80L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z"></path></svg>    </header>
+      </div> -->
+    </header>
+    <!-- Carrusel modificado para ser responsive -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
       </div>
-      <ul class="nav-list">
-        <li><a href="./index.html">Inicio</a></li>
-        <li>
-          <a href="#">Proyecto</a>
-          <!-- Submenú -->
-          <ul class="sub-menu">
-            <li><a href="./HTMLS/sigaru.html">Sigaru</a></li>
-            <li><a href="./HTMLS/tutoriales.html">Tutoriales</a></li>
-            <li><a href="./HTMLS/cartografia.html">Cartografia</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Estudiantes</a>
-          <ul class="sub-menu">
-            <li><a href="./HTMLS/cuentas.html">Cuenta</a></li>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSegqGsI6QiB6x8ia3ti4WMJG3drLg2lw0n2jTUocH0RsgPqcA/viewform" target="_blank" rel="noopener noreferrer">Bitacora</a></li>
-            <li><a href="./HTMLS/informe.html">Informe</a></li>
-          </ul>
-        </li>
-        <li><a href="./HTMLS/nosotros.html">Nosotros</a></li>
-        <li><a href="./HTMLS/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
- 
-  <!-- Carrusel modificado para ser responsive -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/Imagen1.jpg" alt="Árbol Urbano" />
+          <div class="carousel-caption">
+            <h2>La Gestión Integral del Árbol Urbano</h2>
+            <p>
+              Preservar y gestionar nuestros árboles urbanos es clave para la
+              sostenibilidad.
+            </p>
+            <a href="#" class="btn btn-warning btn-left">Conoce más aquí</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Imagen2.jpg" alt="Árbol Urbano" />
+          <div class="carousel-caption">
+            <h2>Beneficios del Arbolado Urbano</h2>
+            <p>
+              Los árboles urbanos reducen la contaminación y mejoran la calidad
+              del aire.
+            </p>
+
+            <a href="#" class="btn btn-warning btn-left">Descubre más</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Imagen4.jpg" alt="Árbol Urbano" />
+          <div class="carousel-caption">
+            <h2>Planificación y Cuidado</h2>
+            <p>
+              Una correcta planificación ayuda a mantener un entorno saludable.
+            </p>
+            <a href="#" class="btn btn-warning btn-left">Infórmate aquí</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Imagen5.jpg" alt="Árbol Urbano" />
+          <div class="carousel-caption">
+            <h2>Importancia de los Espacios Verdes</h2>
+            <p>
+              Los parques y jardines urbanos fomentan el bienestar, reducen el
+              estrés y mejoran la calidad de vida.
+            </p>
+            <a href="#" class="btn btn-warning btn-left">Infórmate aquí</a>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./images/Imagen1.jpg" alt="Árbol Urbano">
-        <div class="carousel-caption">
-          <h2>La Gestión Integral del Árbol Urbano</h2>
-          <p>Preservar y gestionar nuestros árboles urbanos es clave para la sostenibilidad.</p>
-          <a href="#" class="btn btn-warning btn-left">Conoce más aquí</a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./images/Imagen2.jpg" alt="Árbol Urbano">
-        <div class="carousel-caption">
-          <h2>Beneficios del Arbolado Urbano</h2>
-          <p>Los árboles urbanos reducen la contaminación y mejoran la calidad del aire.</p>
-          
-          <a href="#" class="btn btn-warning btn-left">Descubre más</a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./images/Imagen4.jpg" alt="Árbol Urbano">
-        <div class="carousel-caption">
-          <h2>Planificación y Cuidado</h2>
-          <p>Una correcta planificación ayuda a mantener un entorno saludable.</p>
-          <a href="#" class="btn btn-warning btn-left">Infórmate aquí</a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./images/Imagen5.jpg" alt="Árbol Urbano">
-        <div class="carousel-caption">
-          <h2>Importancia de los Espacios Verdes</h2>
-          <p>Los parques y jardines urbanos fomentan el bienestar, reducen el estrés y mejoran la calidad de vida.</p>
-          <a href="#" class="btn btn-warning btn-left">Infórmate aquí</a>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
-  <section id="contenido-adicional">
-    <div id="leaf-container"></div> <!-- Contenedor de hojas -->
-    <section class="productostotal">
-      <section class="products">
-  
-        <h2 style="color: black;">Medidas de Seguridad</h2>
-        <div class="all-products">
-          <div class="product">
-            <img src="./images/casco.png" style="width: 400px; height: 600px;" class="imgs">
+    <section id="contenido-adicional">
+      <div id="leaf-container"></div>
+      <!-- Contenedor de hojas -->
+      <section class="productostotal">
+        <section class="products">
+          <h2 style="color: black">Medidas de Seguridad</h2>
+          <div class="all-products">
+            <div class="product">
+              <img
+                src="./images/casco.png"
+                style="width: 400px; height: 600px"
+                class="imgs"
+              />
+            </div>
+            <div class="product">
+              <img
+                src="./images/gafas.png"
+                style="width: 400px; height: 600px"
+                class="imgs"
+              />
+            </div>
+            <div class="product">
+              <img
+                src="./images/tapones.png"
+                style="width: 400px; height: 600px"
+                class="imgs"
+              />
+            </div>
           </div>
-          <div class="product">
-            <img src="./images/gafas.png" style="width: 400px; height: 600px;" class="imgs">
+        </section>
+
+        <section class="products">
+          <div class="all-products">
+            <div class="product">
+              <img
+                src="./images/guantes.png"
+                style="width: 400px; height: 600px"
+                class="imgs"
+              />
+            </div>
+            <div class="product">
+              <img
+                src="./images/chaleco.png"
+                style="width: 400px; height: 600px"
+                class="imgs"
+              />
+            </div>
+            <div class="product">
+              <img
+                src="./images/mangas.png"
+                style="width: 400px; height: 600px"
+                class="imgs"
+              />
+            </div>
           </div>
-          <div class="product">
-            <img src="./images/tapones.png" style="width: 400px; height: 600px;" class="imgs">
+        </section>
+
+        <section class="products">
+          <div class="all-products">
+            <div class="product">
+              <img
+                src="./images/botas.png"
+                style="width: 400px; height: 600px"
+                class="imgs"
+              />
+            </div>
+            <div class="product">
+              <img
+                src="./images/mascarilla.png"
+                style="width: 400px; height: 600px"
+                class="imgs"
+              />
+            </div>
+            <div class="product">
+              <img
+                src="./images/identidad.png"
+                style="width: 400px; height: 600px"
+                class="imgs"
+              />
+            </div>
           </div>
-        </div>
-      </section>
-  
-      <section class="products">
-        <div class="all-products">
-          <div class="product">
-            <img src="./images/guantes.png" style="width: 400px; height: 600px;" class="imgs">
-          </div>
-          <div class="product">
-            <img src="./images/chaleco.png" style="width: 400px; height: 600px;" class="imgs">
-          </div>
-          <div class="product">
-            <img src="./images/mangas.png" style="width: 400px; height: 600px;" class="imgs">
-          </div>
-        </div>
-      </section>
-  
-      <section class="products">
-        <div class="all-products">
-          <div class="product">
-            <img src="./images/botas.png" style="width: 400px; height: 600px;" class="imgs">
-          </div>
-          <div class="product">
-            <img src="./images/mascarilla.png" style="width: 400px; height: 600px;" class="imgs">
-          </div>
-          <div class="product">
-            <img src="./images/identidad.png" style="width: 400px; height: 600px;" class="imgs">
-          </div>
-        </div>
+        </section>
       </section>
     </section>
-  </section>
 
-  <div class="footer-bottom">
-    <p>Trabajo Comunal Universitario | UTN </p>
-  </div>
+    <div class="footer-bottom">
+      <p>Trabajo Comunal Universitario | UTN</p>
+    </div>
 
-  <script src="./JS/petalos-animacion.js"></script>
-  <script src="./JS/responsive.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-</body>
+    <script src="./JS/petalos-animacion.js"></script>
+    <script src="./JS/responsive.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
