@@ -55,9 +55,11 @@ nav {
 }
 
 .nav-list {
+    
     list-style: none;
     display: flex;
 }
+
 
 .nav-list li {
     
@@ -101,6 +103,7 @@ nav {
     margin: 0;
     width: 150px;
     top: 80%;
+    margin-top: 10px;
     text-align: left; /* Alineación del texto a la izquierda */
     transition: opacity 0.3s ease, visibility 0.3s ease; /* Transición suave */
 }
