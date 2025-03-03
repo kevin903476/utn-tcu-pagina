@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url("../images/background-two.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+
+
+.main-content {
+    padding: 100px;
+    background-color: transparent;
+}
+
+.card-custom {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    height: 100%;
+}
+.card-custom1{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    height: 50%;
+}
+
+h1.section-title {
+    color: #234175;
+    text-align: center;
+    margin: 75px 0 20px;
+}
+
+h2.section-title {
+    color: #234175;
+    margin-bottom: 15px;
+}
+
+.icon-box {
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+
+.icon-box img {
+    width: 100%;
+    height: auto;
+    max-height: 50px;
+    object-fit: contain;
+}
+
+.icon-box p {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.intro-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+.toolbox-section {
+    margin-top: 40px;
+}
+
+.large-icon {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.survey-icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.survey-icon {
+    text-align: center;
+}
+
+.survey-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.survey-icon p {
+    font-size: 12px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .survey-icon-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
