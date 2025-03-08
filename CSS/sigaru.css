@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url("../images/background-two.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+
+
+.main-content {
+    padding: 70px;
+    background-color: transparent;
+}
+
+
+
+h1 {
+    color: #234175;
+    text-align: center;
+    margin: 145px 0 20px;
+}
+
+h2 {
+    color: #234175;
+    margin-bottom: 15px;
+}
+
+
