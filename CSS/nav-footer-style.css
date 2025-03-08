@@ -156,6 +156,7 @@ nav {
 
 .footer-bottom {
     position: relative; /* Establece el contenedor como relativo */
+    margin-top: 15%;
     background: #012169;
     width: 100%;
     text-align: center;
@@ -173,7 +174,9 @@ nav {
     margin-top: 55px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
+
     z-index: 1; /* Asegura que el contenido esté por encima de la imagen */
     padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
 }
@@ -181,9 +184,19 @@ nav {
 .logos{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    
     align-items: center;
     width: 150px;
+    height: 210px;
+    
+}
+
+.contacto h2{
+    margin-bottom: 28px;
+}
+.contacto-email{
+    margin-bottom: 20px;
 }
 
 
