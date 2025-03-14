@@ -5,10 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/nav-style.css">
+    <link rel="stylesheet" href="../CSS/nav-footer-style.css">
     <link rel="stylesheet" href="../CSS/contacto.css">
     <script src="https://kit.fontawesome.com/57b7a3c220.js" crossorigin="anonymous"></script>
     <title>Tutoriales</title>
+    <style>
+        .productostotal {
+            width: 85%;
+            margin: 0 auto;
+            padding: 20px;
+            margin: 169px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .card {
+            margin: 15px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-title {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .btn-primary {
+            background-color: #002F6F;
+            border-color: #002F6F;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #001f4a;
+            border-color: #001f4a;
+        }
+
+        .text-description {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .productostotal {
+                width: 95%;
+            }
+            
+            .card {
+                width: 100% !important;
+                max-width: 300px;
+            }
+        }
+
+        body {
+            background-image: url("../images/background-two.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,7 +91,12 @@
 
     <section class="productostotal">
         <div class="text-center">
-            <h1 style="color: #234175;">TUTORIALES</h1>
+            <h1 style="color: black">Aprende paso a paso</h1>
+            <div class="intro-text">
+                <p>Descubre una coleccion completa de tutoriales prácticos que te guiarán desde lo básico hasta técnicas avanzadas.
+                Cada video está cuidadosamente diseñado para ayudar a dominar nuevas habilidades de manera efectiva</p>
+                
+            </div>
         </div>
         <br>
         <div class="row">
@@ -27,54 +106,49 @@
                     allowfullscreen></iframe>
                 <div class="card-body">
                     <h5 class="card-title">Vinculación Kobotoolbox a QGIS</h5>
-                    
+                    <p class="text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error modi hic quo perferendis quisquam atque voluptates natus debitis, iure possimus odio veritatis mollitia adipisci eligendi voluptatem facere id nihil commodi!</p>
                     <a href="https://www.youtube.com/watch?v=B2HoKyUCcT0" class="btn btn-primary" target="_blank">Ver en
                         YouTube</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <iframe class="card-img-top" src="https://www.youtube.com/embed/udspImqFZXQ" title="Tutorial Video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="card-body">
-                    <h5 class="card-title">Uso de PlantNet en el Censo de Árbol Urbano</h5>
-                    
-                    <a href="https://www.youtube.com/watch?v=udspImqFZXQ" class="btn btn-primary" target="_blank">Ver en
-                        YouTube</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <iframe class="card-img-top" src="https://www.youtube.com/embed/udspImqFZXQ" title="Tutorial Video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="card-body">
-                    <h5 class="card-title">Uso de PlantNet en el Censo de Árbol Urbano</h5>
-                    
-                    <a href="https://www.youtube.com/watch?v=udspImqFZXQ" class="btn btn-primary" target="_blank">Ver en
-                        YouTube</a>
-                </div>
-            </div>
-
-
-            <div class="card" style="width: 18rem;">
-                <iframe class="card-img-top" src="https://www.youtube.com/embed/udspImqFZXQ" title="Tutorial Video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="card-body">
-                    <h5 class="card-title">Uso de PlantNet en el Censo de Árbol Urbano</h5>
-                    
-                    <a href="https://www.youtube.com/watch?v=udspImqFZXQ" class="btn btn-primary" target="_blank">Ver en
-                        YouTube</a>
-                </div>
-            </div>
             
+            <div class="card" style="width: 18rem;">
+                <iframe class="card-img-top" src="https://www.youtube.com/embed/udspImqFZXQ" title="Tutorial Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Uso de PlantNet en el Censo de Árbol Urbano</h5>
+                    <p class="text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti non at alias mollitia ad quas maiores, ex eligendi dolores laboriosam, cumque numquam libero labore, distinctio et harum magnam fuga sint!</p>
+                    <a href="https://www.youtube.com/watch?v=udspImqFZXQ" class="btn btn-primary" target="_blank">Ver en
+                        YouTube</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <iframe class="card-img-top" src="https://www.youtube.com/embed/udspImqFZXQ" title="Tutorial Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Uso de PlantNet en el Censo de Árbol Urbano</h5>
+                    <p class="text-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum deleniti non quia facilis exercitationem ducimus adipisci, voluptatibus similique qui ea aut praesentium recusandae ipsam ut, dolorem nobis quisquam nisi tempora.</p>
+                    <a href="https://www.youtube.com/watch?v=udspImqFZXQ" class="btn btn-primary" target="_blank">Ver en
+                        YouTube</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <iframe class="card-img-top" src="https://www.youtube.com/embed/udspImqFZXQ" title="Tutorial Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Uso de PlantNet en el Censo de Árbol Urbano</h5>
+                    <p class="text-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quo consequuntur. Accusamus, ea, autem laborum aliquid numquam ab soluta tenetur excepturi quidem reiciendis nobis eius nihil! Aspernatur laborum rem non!</p>
+                    <a href="https://www.youtube.com/watch?v=udspImqFZXQ" class="btn btn-primary" target="_blank">Ver en
+                        YouTube</a>
+                </div>
+            </div>
         </div>
-
-
     </section>
-
-
 
     <script src="../JS/header_footer.js"></script>
     <script src="../JS/responsive.js"></script>
