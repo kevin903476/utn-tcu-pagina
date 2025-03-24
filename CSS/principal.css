@@ -14,6 +14,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+main{
+  margin-left: 13%;
+  margin-right: 13%;
+}
 
 @keyframes navLinkFade {
   from {
@@ -62,9 +66,14 @@ body {
   padding: 2rem;
  
 }
+.descripcion-proyecto{
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
 
 .contenido-inicial p, .contenido-inicial ul, .contenido-inicial li {
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   color: #333;
   line-height: 1.6;
   max-width: 600px; /* Limita el ancho del texto para mejor lectura */
@@ -74,11 +83,7 @@ body {
   padding-left: 0; /* Alinea bien el texto */
 }
 
-.contenido-inicial ul li::before {
-  content: "🌿"; /* Emoji o icono */
-  font-size: 1.2rem;
-  margin-right: 8px;
-}
+
 
 
 .contenido-inicial img {
@@ -93,13 +98,13 @@ body {
   min-height: 600px;
 }
 
-.cartasProductos{
+.cartasProductos, .contenido{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.cartasProductos p{
+.cartasProductos p, .contenido p{
   text-align: center;
   font-size: 1.3rem;
   color: #333;
@@ -111,6 +116,7 @@ body {
   position: relative;
   z-index: 2;
 }
+
 
 /* Carrusel  */
 #carouselExampleIndicators {
@@ -225,12 +231,84 @@ body {
   z-index: 3;
 }
 
+.custom-accordion {
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 250px !important;
+}
+
+
+.accordion-body {
+  font-size: 17px; /* Tamaño fijo del texto */
+  line-height: 36px; /* Espaciado para mejor lectura */
+  max-width: 100%; /* Se mantiene dentro del acordeón */
+  overflow-wrap: break-word; /* Evita desbordes */
+  
+}
+
+.accordion-item {
+  width: 100%; /* Mantiene el mismo ancho siempre */
+  margin: 10px;
+  
+}
+
+.accordion-button {
+  font-size: 19px !important; /* Aumenta el tamaño del texto del botón */
+  font-weight: bold; /* Hace que el texto sea más visible */
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none; /* Evita que se vea más grande cuando está abierto */
+  
+}
+
+/* Cambiar el color del botón del acordeón */
+.custom-accordion .accordion-button {
+  background-color: #eff7fc; /* Celeste más intenso */
+  color: #003366; /* Texto azul oscuro para buen contraste */
+}
+
+/* Cambiar color del botón cuando está abierto */
+.custom-accordion .accordion-button:not(.collapsed) {
+  background-color: #6ab8e6; /* Azul más oscuro */
+  color: white; /* Texto blanco */
+  
+}
+
+
+
+
+.descargar-texto {
+  font-size: 1rem;
+  color: #003366; /* Azul oscuro para mejor visibilidad */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.descargar-btn {
+  display: block;
+  width: 250px;
+  text-align: center;
+  background-color: #007bff; /* Azul Bootstrap */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 0 auto;
+  transition: background 0.3s ease;
+}
+
+.descargar-btn:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
 /* Productos */
 .products {
   font-size: 1.7rem;
   font-family: 'Merriweather Sans', sans-serif;
   color: black;
-  padding: 1rem 2rem;
 }
 
 .products2 {
@@ -313,6 +391,10 @@ body {
     padding: 0;
     margin-bottom: 0;
   }
+  main{
+    margin-left: 1%;
+    margin-right: 1%;
+  }
 
   .nav-list {
     z-index: 10;
@@ -391,6 +473,7 @@ body {
     padding: 0 1rem;
     display: block !important;
   }
+  
   
   .carousel-caption h2 {
     font-size: 1.5rem;
