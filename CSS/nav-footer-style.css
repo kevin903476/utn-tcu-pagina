@@ -98,6 +98,7 @@ nav {
     visibility: hidden; /* No es visible */
     position: absolute;
     background-color: #012169;
+    border-radius: 15px;
     list-style: none;
     padding: 0;
     margin: 0;
