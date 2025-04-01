@@ -18,6 +18,7 @@ main{
   margin-left: 13%;
   margin-right: 13%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -59,7 +60,7 @@ main{
 }
 
 .primer-contenido{
-  margin-top: 6%;
+  margin-top: 5%;
 }
 
 .contenido-inicial > div{
@@ -444,7 +445,7 @@ main{
     margin-right: 1%;
   }
   .primer-contenido{
-    margin-top: 15%;
+    margin-top: 10%;
     text-align: center;;
   }
   
@@ -524,7 +525,7 @@ main{
   }
   
   .primer-contenido {
-    margin-top: 15%;
+    margin-top: 6%;
   }
   .carousel-caption h2 {
     font-size: 1.5rem;
