@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 
 <head>
@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../CSS/contacto.css">
   <link rel="stylesheet" href="../CSS/nav-footer-style.css">
+  <link rel="stylesheet" href="../CSS/petalos-style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <script src="https://kit.fontawesome.com/57b7a3c220.js" crossorigin="anonymous"></script>
   <title>Contacto</title>
@@ -13,39 +14,46 @@
 
 <body>
 
-  <header>
-  </header>
-
+  <header></header>
+  
   <div class="container">
     <div class="content">
-      <div class="left-side">
+        <div id="leaf-container"></div>
+      <!-- Facebook Card -->
+      <div class="card facebook-card">
         <div class="address details">
           <a href="https://www.facebook.com/arboladourbanocrgu/"><i class="fa-brands fa-square-facebook"></i></a>
           <div class="topic">Facebook</div>
           <div class="text-one">Árboles Urbanos UTN</div>
-          <!-- <div class="text-two">Birendranagar 06</div> -->
+          <div class="description">En nuestra pantalla de Facebook encontrarás más acerca sobre el TCU de Gestión del Árbol Urbano. ¡Haz clic para más información!</div>
         </div>
+      </div>
+
+      <!-- Phone Card -->
+      <div class="card phone-card">
         <div class="phone details">
           <a href="https://wa.link/arbo1j"><i class="fas fa-phone-alt"></i></a>
           <div class="topic">Teléfono</div>
           <div class="text-one">+506 26683550</div>
-          <!-- <div class="text-two">+0096 3434 5678</div> -->
+          <div class="description">A este número de contacto te puedes comunicar con la persona encargada del TCU para realizar consultas. ¡No dudes en escribirnos!</div>
         </div>
+      </div>
+
+      <!-- Email Card -->
+      <div class="card email-card">
         <div class="email details">
           <a href="mailto:arboricultura@utn.ac.cr"><i class="fa-solid fa-envelope"></i></a>
           <div class="topic">Email</div>
           <div class="text-one">arboricultura@utn.ac.cr</div>
-          <!-- <div class="text-two">info.codinglab@gmail.com</div> -->
+          <div class="description">Si prefieres escribirnos por correo electrónico, contáctanos en el email indicado. Responderemos a tus consultas con gusto.</div>
         </div>
-      </div>
-      <div class="right-side">
-        <div class="topic-text">Aprende sobre los árboles urbanos!</div>
       </div>
     </div>
   </div>
 
   <script src="../JS/header_footer.js"></script>
   <script src="../JS/responsive.js"></script>
+  <script src="../JS/petalos-animacion.js"></script>
 
 </body>
 

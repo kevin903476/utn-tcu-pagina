@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -9,143 +8,75 @@
 body {
     min-height: 100vh;
     width: 100%;
-    background: #ffffff;
     display: flex;
     align-items: center;
-    justify-content: center;;
+    justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 100%;
     background-attachment: fixed;
-}
-body {
     margin: 0;
     background-image: url("../images/background-two.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-  }
-
-.container {
-    width: 65%;
-    background: #fff;
-    border-radius: 6px;
-    padding: 20px 60px 30px 40px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 150px;
 }
 
 .container .content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: column;
+    gap: 20px;
 }
 
-.container .content .left-side {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-    position: relative;
-    margin-bottom: 3%;
-}
-
-.content .left-side::before {
-    content: '';
-    position: absolute;
-    width: 100%; /* Cambiar 'height' por 'width' para hacerlo horizontal */
-    height: 2px; /* Cambiar 'width' por 'height' para hacerlo horizontal */
-    bottom: -15px; /* Cambiar 'right' por 'bottom' para hacerlo horizontal */
-    left: 50%;
-    transform: translateX(-50%); /* Cambiar 'translateY' por 'translateX' para hacerlo horizontal */
-    background: #afafb6;
+.card {
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-}  
-
-.content .left-side .details {
-    margin: 14px;
-    text-align: center;
+    margin-top: 50px; /* Se ajusta la posición vertical */
 }
 
-.content .left-side .details i {
-    font-size: 30px;
+.card i {
+    font-size: 40px;
     color: #002F6F;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.content .left-side .details .topic {
-    font-size: 18px;
+.card .topic {
+    font-size: 25px;
     font-weight: 500;
-}
-
-.content .left-side .details .text-one,
-.content .left-side .details .text-two {
-    font-size: 14px;
-    color: #afafb6;
-}
-
-.container .content .right-side {
-    width: 60%;
-    margin-left: 0;
-    text-align: center;
-}
-
-.content .right-side .topic-text {
-    font-size: 23px;
-    font-weight: 600;
     color: #002F6F;
+    margin-bottom: 8px;
 }
 
-.right-side .input-box {
-    height: 50px;
-    width: 100%;
-    margin: 12px 0;
+.card .text-one {
+    font-size: 12px;
+    color: black;
 }
 
-.right-side .input-box input,
-.right-side .input-box textarea {
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    background: #F0F1F8;
-    border-radius: 6px;
-    padding: 0 15px;
-    resize: none;
-}
-
-.right-side .message-box {
-    min-height: 110px;
-}
-
-.right-side .input-box textarea {
-    padding-top: 6px;
-}
-
-.right-side .button {
-    display: inline-block;
-    margin-top: 12px;
-}
-
-.right-side .button input[type="button"] {
-    color: #fff;
+.card .description {
     font-size: 18px;
-    outline: none;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 6px;
-    background: #002F6F;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    color: #000000; /* Cambié el color a negro */
+    margin-top: 10px;
+    font-style: italic;
 }
 
-.button input[type="button"]:hover {
-    background: #002F6F;
+/* Estilos para cada card */
+.facebook-card {
+    background-color: #7c9ffd; /* Fondo de color de Facebook */
+}
+
+.phone-card {
+    background-color: #b5caf8; /* Fondo de color de WhatsApp */
+    color: white;
+}
+
+.email-card {
+    background-color: #b5caf8;/* Fondo de color de Gmail */
+    color: white;
 }
 
 @media (max-width: 950px) {
@@ -155,47 +86,19 @@ body {
         padding: 30px 40px 40px 35px;
     }
 
-    .container .content .right-side {
-        margin-top: 15%;
-        width: 75%;
-        margin-left: 55px;
-    }
-}
-
-@media (max-width: 980px) {
-    .container {
-        margin: 105px 0;
-        height: 100%;
-    }
-
     .container .content {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .container .content .left-side {
-        width: 100%;
-        flex-direction: row;
-        margin-top: 40px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .container .content .left-side::before {
-        display: none;
-    }
-
-    .container .content .right-side {
-        width: 100%;
-        margin-left: 0;
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
     }
 }
 
-
 @media (max-width: 980px) {
-    body {
-        display: flex;
-        justify-content: center;
-        /* align-items: center; */
-        background-size: cover;
+    .container .content {
+        flex-direction: column;
     }
 }
