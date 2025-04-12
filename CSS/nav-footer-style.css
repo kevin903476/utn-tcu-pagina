@@ -1,3 +1,5 @@
+
+
 header {
     position: fixed;
     width: 100%;
@@ -44,7 +46,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #012169;
+    background: #012969;
     height: 18vh;
     top: 0;
     position: fixed;
@@ -89,7 +91,7 @@ nav {
 .nav-list.active {
     transform: translateX(0);
     height: auto;
-    background-color: #012169;
+    background-color: #012969;
 }
 
 /* Estilo para el submenú */
@@ -97,7 +99,7 @@ nav {
     opacity: 0; /* Comienza oculto */
     visibility: hidden; /* No es visible */
     position: absolute;
-    background-color: #012169;
+    background-color: #012969;
     border-radius: 15px;
     list-style: none;
     padding: 0;
@@ -157,8 +159,8 @@ nav {
 
 .footer-bottom {
     position: relative; /* Establece el contenedor como relativo */
-    margin-top: 15%;
-    background: #012169;
+    margin-top: 25%;
+    background: #012969;
     width: 100%;
     text-align: center;
     color: white;
@@ -227,7 +229,7 @@ nav {
         transition: all 300ms;
     }
     .sub-menu-phone:hover{
-        margin-bottom: 200px;
+        margin-bottom: 300px;
     }
    
     .margin-top{
