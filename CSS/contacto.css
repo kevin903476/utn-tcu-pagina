@@ -1,193 +1,588 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif !important;
 }
 
 body {
-    min-height: 100vh;
-    width: 100%;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100%;
-    background-attachment: fixed;
+  margin: 0;
+  background-image: url("../images/background-two.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.container {
-    width: 65%;
-    background: #fff;
-    border-radius: 6px;
-    padding: 20px 60px 30px 40px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+main {
+  margin-left: 13%;
+  margin-right: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.container .content {
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.titulo {
+  color: #234175;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.primerTitulo {
+  margin: 120px 0 30px;
+}
+
+.siguienteTitulo {
+  margin: 50px 0 30px;
+}
+
+.subtitulo {
+  color: #234175;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.primer-contenido {
+  margin-top: 5%;
+}
+
+.contenido-inicial > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.descripcion-proyecto {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contenido-inicial p,
+.contenido-inicial ul,
+.contenido-inicial li {
+  font-size: 1.08rem;
+  color: #333;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.contenido-inicial ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contenido-inicial img {
+  width: 550px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#contenido-adicional {
+  position: relative;
+  min-height: 600px;
+}
+
+.cartasProductos,
+.contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartasProductos p,
+.contenido p {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 1.6;
+  max-width: 1100px;
+}
+
+.productostotal {
+  position: relative;
+  z-index: 2;
+}
+
+/* ================== ESTILOS MEJORADOS PARA EL CARRUSEL ================== */
+.carousel-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 120px auto 40px;
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.carousel-section h2 {
+  color: #234175;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding: 59px;
+}
+
+.carousel-section p {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  max-width: 800px;
+}
+
+/* Contenedor principal del carrusel */
+.multi-card-carousel {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background-color: #8B4513;
+  padding: 40px 0;
+  border-radius: 10px;
+}
+
+/* Pista del carrusel */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+  padding: 0 60px;
+}
+
+/* Tarjetas individuales */
+.carousel-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  min-width: 300px;
+  margin: 0 15px;
+  text-align: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 380px;
+}
+
+.carousel-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.carousel-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.carousel-card h3 {
+  color: #13298b;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.carousel-card p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.btn-warning {
+  background-color: #FFD700;
+  color: #000;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  font-size: 1rem;
+}
+
+.btn-warning:hover {
+  background-color: #FFC400;
+  transform: translateY(-2px);
+}
+
+/* Controles del carrusel - MEJORADOS */
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 0 15px;
+  z-index: 10;
+}
+
+.carousel-control {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-control:hover {
+  background-color: #fff;
+  transform: scale(1.1);
+}
+
+.carousel-control.prev {
+  margin-left: 5px;
+}
+
+.carousel-control.next {
+  margin-right: 5px;
+}
+
+/* Indicadores */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 8px;
+}
+
+.carousel-indicator {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicator.active {
+  background-color: #fff;
+  transform: scale(1.2);
+}
+
+/* ================== FIN ESTILOS CARRUSEL MEJORADO ================== */
+
+/* Ajustes para iconos sociales existentes */
+.social-icon i {
+  font-size: 40px;
+  background-color: #000;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Form Container Styles */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0;
+}
+
+.contact-form {
+  background-color: #fdea7b;
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form Control Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Button Styles */
+.btn-enviar {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #333;
+}
+
+/* Social Icons Container */
+.social-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px auto 80px;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.social-icon a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon a:hover {
+  transform: translateY(-5px);
+  color: #234175;
+}
+
+.social-icon i {
+  font-size: 30px;
+  background-color: #000;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon span {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+/* ================== MEDIA QUERIES ================== */
+@media (max-width: 1200px) {
+  main {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel-card {
+    min-width: calc(50% - 30px);
+  }
+  
+  main {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: 880px) {
+  .contenido-inicial img {
+    width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Estilos específicos para móvil en el carrusel */
+  .carousel-track {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding: 0 20px;
+    scroll-padding: 0 20px;
+  }
+  
+  .carousel-card {
+    scroll-snap-align: center;
+    flex: 0 0 80%;
+    margin: 0 10px;
+    min-height: 350px;
+    padding: 20px;
+  }
+  
+  .carousel-controls {
+    display: none;
+  }
+  
+  .carousel-indicators {
+    margin-top: 20px;
+  }
+  
+  .primer-contenido {
+    margin-top: 15%;
+  }
+  
+  .contenido-inicial > div {
     flex-direction: column;
-}
-
-.container .content .left-side {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-    position: relative;
-    margin-bottom: 3%;
-}
-
-.content .left-side::before {
-    content: '';
-    position: absolute;
-    width: 100%; /* Cambiar 'height' por 'width' para hacerlo horizontal */
-    height: 2px; /* Cambiar 'width' por 'height' para hacerlo horizontal */
-    bottom: -15px; /* Cambiar 'right' por 'bottom' para hacerlo horizontal */
-    left: 50%;
-    transform: translateX(-50%); /* Cambiar 'translateY' por 'translateX' para hacerlo horizontal */
-    background: #afafb6;
-    text-align: center;
-}  
-
-.content .left-side .details {
-    margin: 14px;
-    text-align: center;
-}
-
-.content .left-side .details i {
-    font-size: 30px;
-    color: #002F6F;
-    margin-bottom: 10px;
-}
-
-.content .left-side .details .topic {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.content .left-side .details .text-one,
-.content .left-side .details .text-two {
-    font-size: 14px;
-    color: #afafb6;
-}
-
-.container .content .right-side {
-    width: 60%;
-    margin-left: 0;
-    text-align: center;
-}
-
-.content .right-side .topic-text {
-    font-size: 23px;
-    font-weight: 600;
-    color: #002F6F;
-}
-
-.right-side .input-box {
-    height: 50px;
+    padding: 1.5rem;
+  }
+  
+  .contenido-inicial img {
     width: 100%;
-    margin: 12px 0;
+    max-width: 500px;
+    margin-top: 20px;
+  }
+  
+  .social-icons-container {
+    gap: 20px;
+  }
+  
+  .contact-form {
+    padding: 25px;
+    margin: 0 20px;
+  }
 }
 
-.right-side .input-box input,
-.right-side .input-box textarea {
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    background: #F0F1F8;
-    border-radius: 6px;
+@media (max-width: 576px) {
+  main {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  
+  .carousel-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .carousel-section p {
+    font-size: 1rem;
     padding: 0 15px;
-    resize: none;
+  }
+  
+  .carousel-card {
+    flex: 0 0 85%;
+    min-height: 320px;
+    padding: 18px;
+    margin: 0 5px;
+  }
+  
+  .carousel-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .carousel-card p {
+    font-size: 0.9rem;
+  }
+  
+  .btn-warning {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .primer-contenido {
+    margin-top: 20%;
+  }
+  
+  .social-icons-container {
+    gap: 15px;
+  }
+  
+  .social-icon i {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
+  
+  .contact-form {
+    padding: 20px;
+  }
 }
 
-.right-side .message-box {
-    min-height: 110px;
-}
-
-.right-side .input-box textarea {
-    padding-top: 6px;
-}
-
-.right-side .button {
-    display: inline-block;
-    margin-top: 12px;
-}
-
-.right-side .button input[type="button"] {
-    color: #fff;
-    font-size: 18px;
-    outline: none;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 6px;
-    background: #002F6F;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.button input[type="button"]:hover {
-    background: #002F6F;
-}
-
-@media (max-width: 950px) {
-    .container {
-        margin-top: 15%;
-        width: 90%;
-        padding: 30px 40px 40px 35px;
-    }
-
-    .container .content .right-side {
-        margin-top: 15%;
-        width: 75%;
-        margin-left: 55px;
-    }
-}
-
-@media (max-width: 980px) {
-    .container {
-        margin: 105px 0;
-        height: 100%;
-    }
-
-    .container .content {
-        flex-direction: column-reverse;
-    }
-
-    .container .content .left-side {
-        width: 100%;
-        flex-direction: row;
-        margin-top: 40px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .container .content .left-side::before {
-        display: none;
-    }
-
-    .container .content .right-side {
-        width: 100%;
-        margin-left: 0;
-    }
-}
-
-
-@media (max-width: 980px) {
-    body {
-        display: flex;
-        justify-content: center;
-        /* align-items: center; */
-        background-size: cover;
-    }
+@media (max-width: 480px) {
+  .primer-contenido {
+    margin-top: 25%;
+  }
+  
+  .carousel-card {
+    flex: 0 0 90%;
+  }
+  
+  .btn-enviar {
+    width: 100%;
+  }
 }

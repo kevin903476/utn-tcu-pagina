@@ -1,52 +1,240 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html> 
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../CSS/contacto.css">
-  <link rel="stylesheet" href="../CSS/stiles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-  <script src="https://kit.fontawesome.com/57b7a3c220.js" crossorigin="anonymous"></script>
-  <title>Contacto</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../CSS/nav-footer-style.css">
+    <link rel="stylesheet" href="../CSS/petalos-style.css">
+    <link rel="stylesheet" href="../CSS/contacto.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
 
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <header>
-  </header>
+    <title>Contacto</title>
+    
+  </head>
+  <style>
 
-  <div class="container">
-    <div class="content">
-      <div class="left-side">
-        <div class="address details">
-          <a href="https://www.facebook.com/arboladourbanocrgu/"><i class="fa-brands fa-square-facebook"></i></a>
-          <div class="topic">Facebook</div>
-          <div class="text-one">Árboles Urbanos UTN</div>
-          <!-- <div class="text-two">Birendranagar 06</div> -->
+  </style>
+  <body>
+
+    <header></header>
+    
+    <div class="carousel-section">
+      <h2>Nuestro medio de contactos</h2>
+      <p>Estos son algunas de nuestras redes y medio de contacto para el TCU</p>
+      
+      <div class="multi-card-carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-card">
+            <img src="../images/Imagen3.jpg" alt="Facebook">
+            <h3>Facebook</h3>
+            <p>
+              En nuestra pantalla de Facebook encontrarás más sobre el TCU de Gestión del Árbol Urbano.
+            </p>
+            <a onclick="window.location.href='https://www.facebook.com/arboladourbanocrgu/'" class="btn btn-warning">Más Información</a>
+          </div>
+          
+          <div class="carousel-card">
+            <img src="../images/imagen7.jpg" alt="Gmail">
+            <h3>GMAIL</h3>
+            <p>
+              Si prefieres escribirnos, puedes enviarnos un correo electrónico a la dirección oficial del proyecto.
+            </p>
+            <a onclick="window.location.href='mailto:arboricultura@utn.ac.cr'" class="btn btn-warning">Más Información</a>
+          </div>
+          
+          <div class="carousel-card">
+            <img src="../images/imagen8.JPG" alt="Teléfono">
+            <h3>Teléfono</h3>
+            <p>
+              Puedes comunicarte directamente con el personal encargado del TCU mediante este número.
+            </p>
+            <a onclick="window.location.href='https://wa.link/arbo1j'" class="btn btn-warning">Más Información</a>
+          </div>
         </div>
-        <div class="phone details">
-          <a href="https://wa.link/arbo1j"><i class="fas fa-phone-alt"></i></a>
-          <div class="topic">Teléfono</div>
-          <div class="text-one">+506 26683550</div>
-          <!-- <div class="text-two">+0096 3434 5678</div> -->
+        
+        <div class="carousel-controls">
+          <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
+          <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
         </div>
-        <div class="email details">
-          <a href="mailto:arboricultura@utn.ac.cr"><i class="fa-solid fa-envelope"></i></a>
-          <div class="topic">Email</div>
-          <div class="text-one">arboricultura@utn.ac.cr</div>
-          <!-- <div class="text-two">info.codinglab@gmail.com</div> -->
+        
+        <div class="carousel-indicators">
+          <span class="carousel-indicator active" onclick="goToSlide(0)"></span>
+          <span class="carousel-indicator" onclick="goToSlide(1)"></span>
+          <span class="carousel-indicator" onclick="goToSlide(2)"></span>
         </div>
-      </div>
-      <div class="right-side">
-        <div class="topic-text">Aprende sobre los árboles urbanos!</div>
       </div>
     </div>
-  </div>
 
-  <script src="../JS/header_footer.js"></script>
-  <script src="../JS/responsive.js"></script>
+      <div id="leaf-container"></div>
+      
+      <div class="form-container">
+        <div class="contact-form">
+          <h2 class="titulo">Contáctanos</h2>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="presupuesto">Propósito</label>
+              <input type="text" id="presupuesto" name="presupuesto" class="form-control">
+            </div>
+            
+            <div class="form-group">
+              <label for="correo">Correo Electrónico</label>
+              <input type="email" id="correo" name="correo" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" class="form-control" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-enviar">Enviar</button>
+          </form>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <div class="contenido-footer">
+          <div class="contacto">
+            <h2>Contacto</h2>
+            <div class="contacto-email">
+              <h3>Email</h3>
+              <p>arboricultura@utn.ac.cr</p>
+            </div>
+            <div class="contacto-telefono">
+              <h3>Teléfono</h3>
+              <p>+506 26683550</p>
+            </div>
+          </div>
+          <div class="ubicacion">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.5514058214253!2d-85.08756072533592!3d10.430573389697935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9ffae9f090abdb%3A0x601e4130983c5ef2!2sUTN!5e1!3m2!1ses!2scr!4v1741070529697!5m2!1ses!2scr"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="logos">
+            <img src="/images/logo-utn.png" width="82%" alt="" />
+            <img src="/images/Logotipo TCU blanco.png" width="82%" alt="" />
+          </div>
+        </div>
+  
+        <img src="/images/footer.jpg" width="100%" height="100%" alt="" />
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  const track = document.getElementById('carouselTrack');
+  const cards = document.querySelectorAll('.carousel-card');
+  const indicators = document.querySelectorAll('.carousel-indicator');
+  const prevBtn = document.querySelector('.carousel-control.prev');
+  const nextBtn = document.querySelector('.carousel-control.next');
+  
+  let currentIndex = 0;
+  const cardWidth = cards[0].offsetWidth + 30; // Incluye el margen
+  
+  // Función para actualizar la posición
+  function updateCarousel() {
+    track.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
+    
+    // Actualizar indicadores
+    indicators.forEach((indicator, index) => {
+      indicator.classList.toggle('active', index === currentIndex);
+    });
+  }
+  
+  // Event listeners para los botones
+  if (prevBtn && nextBtn) {
+    prevBtn.addEventListener('click', () => {
+      currentIndex = Math.max(currentIndex - 1, 0);
+      updateCarousel();
+    });
+    
+    nextBtn.addEventListener('click', () => {
+      currentIndex = Math.min(currentIndex + 1, cards.length - 1);
+      updateCarousel();
+    });
+  }
+  
+  // Configuración para móviles
+  if (window.innerWidth <= 768) {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    
+    track.addEventListener('mousedown', (e) => {
+      isDown = true;
+      startX = e.pageX - track.offsetLeft;
+      scrollLeft = track.scrollLeft;
+    });
+    
+    track.addEventListener('mouseleave', () => {
+      isDown = false;
+    });
+    
+    track.addEventListener('mouseup', () => {
+      isDown = false;
+    });
+    
+    track.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - track.offsetLeft;
+      const walk = (x - startX) * 2;
+      track.scrollLeft = scrollLeft - walk;
+    });
+    
+    // Eventos táctiles
+    track.addEventListener('touchstart', (e) => {
+      isDown = true;
+      startX = e.touches[0].pageX - track.offsetLeft;
+      scrollLeft = track.scrollLeft;
+    });
+    
+    track.addEventListener('touchend', () => {
+      isDown = false;
+    });
+    
+    track.addEventListener('touchmove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.touches[0].pageX - track.offsetLeft;
+      const walk = (x - startX) * 2;
+      track.scrollLeft = scrollLeft - walk;
+    });
+  }
+  
+  // Redimensionamiento
+  window.addEventListener('resize', function() {
+    const newCardWidth = cards[0].offsetWidth + 30;
+    track.style.transform = `translateX(${-currentIndex * newCardWidth}px)`;
+  });
+});
+      </script>
+      
+      <script src="../JS/header_footer.js"></script>
+      <script src="./JS/petalos-animacion.js"></script>
+      <script src="./JS/responsive.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"
+      ></script>
+  </body>
 
-</body>
-
-</html>
+  </html>

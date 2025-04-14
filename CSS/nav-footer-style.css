@@ -1,0 +1,335 @@
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background-color: #333;
+    z-index: 1000;
+}
+#logo-utn{
+    width: 8%;
+    height: auto;
+}
+a.logo {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Añadir padding para dar espacio alrededor del texto */
+    border-radius: 15px; /* Mantener el borde redondeado */
+    transition: color 300ms ease, background-color 300ms ease, opacity 300ms ease, transform 300ms ease; /* Transiciones específicas */
+    background-color: transparent; /* Fondo transparente por defecto */
+}
+
+li a:hover {
+    opacity: 1; /* Mantener la opacidad al 100% */
+    color: #ffffff; /* Color del texto al pasar el mouse */
+    background-color: #234175; /* Color de fondo más armonioso */
+    transform: scale(1.05); /* Efecto de escala */
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #012969;
+    height: 18vh;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    border-end-end-radius: 40px;
+    border-end-start-radius: 40px;
+}
+
+.nav-list {
+    
+    list-style: none;
+    display: flex;
+}
+
+
+.nav-list li {
+    
+    font-size: 20px;
+    margin-left: 32px;
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    padding: 10px;
+    
+    font-weight: bold;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.nav-list.active {
+    transform: translateX(0);
+    height: auto;
+    background-color: #012969;
+}
+
+/* Estilo para el submenú */
+.nav-list .sub-menu {
+    opacity: 0; /* Comienza oculto */
+    visibility: hidden; /* No es visible */
+    position: absolute;
+    background-color: #012969;
+    border-radius: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    top: 80%;
+    margin-top: 10px;
+    text-align: left; /* Alineación del texto a la izquierda */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transición suave */
+}
+
+/* Estilo para los elementos de la lista del submenú */
+.nav-list .sub-menu li {
+    margin: 0;
+}
+
+/* Estilo para los enlaces del submenú */
+.nav-list .sub-menu li a {
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    background-color: #234175;
+    font-size: 15px;
+    border-bottom: 1px solid #fff;
+    text-align: left; 
+    width: 100%; 
+    display: block; 
+    box-sizing: border-box;
+   
+}
+
+/* Mostrar el submenú al pasar el ratón sobre el elemento principal */
+.nav-list li:hover .sub-menu {
+    opacity: 1; /* Hacerlo visible */
+    visibility: visible; /* Cambiar a visible */
+}
+
+/* Cambiar el color de fondo al pasar el ratón sobre los enlaces del submenú */
+.nav-list .sub-menu li a:hover {
+    background-color: #234175;
+}
+
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+.footer-bottom {
+    position: relative; /* Establece el contenedor como relativo */
+    margin-top: 25%;
+    background: #012969;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-start-start-radius: 40px;
+    border-start-end-radius: 40px;
+    overflow: hidden; /* Asegura que el contenido no sobresalga del borde redondeado */
+}
+
+.contenido-footer {
+    position: absolute; /* Posiciona el contenido de forma absoluta */
+    top: 0; /* Coloca el contenido en la parte superior */
+    left: 0; /* Alinea a la izquierda */
+    right: 0; /* Alinea a la derecha */
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    z-index: 1; /* Asegura que el contenido esté por encima de la imagen */
+    padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
+}
+
+.logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    align-items: center;
+    width: 150px;
+    height: 210px;
+    
+}
+
+.contacto h2{
+    margin-bottom: 28px;
+}
+.contacto-email{
+    margin-bottom: 20px;
+}
+
+
+.footer-bottom p {
+    font-size: 16px;
+}
+
+@media (max-width: 980px) {
+
+    #logo-utn{
+        width: 18%;
+    }
+
+    li a {
+
+        font-size: 25px;
+    }
+    body {
+        overflow-x: hidden;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .sub-menu-phone{
+        transition: all 300ms;
+    }
+    .sub-menu-phone:hover{
+        margin-bottom: 300px;
+    }
+   
+    .margin-top{
+        margin-top: 200px;
+    }
+    #sub-menu-ul{
+        margin-top: 14px;
+    }
+
+    .nav-list {
+        margin-top: 10px;
+        width: 190px; /* Aumentar el ancho del menú */
+        height: auto; /* Permitir que el menú ajuste su altura */
+        padding: 20px; /* Añadir padding para un mejor espaciado */
+        overflow-y: scroll; /* Permite el desplazamiento vertical */
+        overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+        
+        max-height: 100vh; /* Limitar la altura máxima */
+    }
+
+   
+
+    
+
+    .mobile-menu {
+        display: block;
+    }
+    .footer-bottom {
+        position: static;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .contenido-footer {
+        position: static;
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center;
+        width: 85%;
+    }
+    .contenido-footer > div{
+        margin-bottom: 40px;
+    }
+    .ubicacion iframe{width: 300px;}
+    
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    footer {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logoF {
+        width: 150px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .footer-content {
+        margin-bottom: 20px;
+    }
+
+    .footer-content h3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .footer-content p {
+        font-size: 14px;
+    }
+
+    .socials {
+        margin-bottom: 20px;
+    }
+
+    ul.socials {
+        margin-left: 60px;
+    }
+
+    .socials li {
+        margin: 0 5px;
+    }
+
+    .socials a i {
+        font-size: 25px;
+    }
+
+    .footer-bottom p {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para dispositivos de pantalla mediana y grande */
+@media only screen and (min-width: 769px) {
+    footer {
+        padding-left: 100px;
+    }
+}

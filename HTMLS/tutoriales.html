@@ -1,83 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/petalos-style.css" />
+    <link rel="stylesheet" href="../CSS/principal.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/57b7a3c220.js"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/stiles.css">
-    <link rel="stylesheet" href="../CSS/contacto.css">
-    <script src="https://kit.fontawesome.com/57b7a3c220.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/nav-footer-style.css" />
+    <link rel="shortcut icon" href="/images/arbol-icono.ico" type="image/x-icon">
     <title>Tutoriales</title>
-</head>
+    <style>
 
-<body>
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 20px;
+      }
+
+      .card {
+        width: 300px; /* Tamaño fijo para todas las tarjetas */
+        height: 500px; /* Todas las tarjetas tendrán la misma altura */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .card iframe {
+        width: 100%;
+        height: 180px; /* Tamaño fijo para los videos */
+      }
+
+      .card-body {
+        flex-grow: 1; /* Hace que el contenido ocupe todo el espacio disponible */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .text-description {
+        flex-grow: 1; /* Permite que el texto se distribuya de forma uniforme */
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card-title {
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #333;
+      }
+
+      .btn-primary {
+        background-color: #002f6f;
+        border-color: #002f6f;
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background-color: #001f4a;
+        border-color: #001f4a;
+      }
+
+      .text-description {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+
+      @media (max-width: 768px) {
+        .productostotal {
+          width: 95%;
+        }
+
+        .card {
+          width: 100% !important;
+          max-width: 300px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
     <header>
+      <nav>
+        <img id="logo-utn" src="../images/logo-utn.png" />
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="../index.html">Inicio</a></li>
+          <li class="sub-menu-phone">
+            <a href="#">Proyecto</a>
+            <!-- Submenú -->
+            <ul id="sub-menu-ul" class="sub-menu">
+              <li><a href="../HTMLS/sigaru.html">Sigaru</a></li>
+              <li><a href="../HTMLS/tutoriales.html">Capacitacion</a></li>
+              <li><a href="../HTMLS/cartografia.html">Cartografia</a></li>
+              <li><a href="#">Normativa</a></li>
+              <li><a href="#">Taxonomía</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu-phone">
+            <a href="#">Estudiantes</a>
+            <ul id="sub-menu-ul" class="sub-menu">
+              <li><a href="../HTMLS/cuentas.html">Cuenta</a></li>
+              <li>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSegqGsI6QiB6x8ia3ti4WMJG3drLg2lw0n2jTUocH0RsgPqcA/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Bitacora</a
+                >
+              </li>
+              <li><a href="../HTMLS/informe.html">Informe</a></li>
+              <li><a href="#">Informe Final</a></li>
+
+            </ul>
+          </li>
+          <li><a href="../HTMLS/nosotros.html">Nosotros</a></li>
+          <li><a href="../HTMLS/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section class="productostotal">
-        <div class="text-center">
-            <h1 style="color: #234175;">TUTORIALES</h1>
-        </div>
-        <br>
+    <div id="leaf-container"></div>
+    <!-- Contenedor de hojas -->
+
+    <main>
+      <section class="productostotal margin-top">
+        <section class="contenido">
+          <div class="text-center">
+            <h1 class="primer-contenido titulo primerTitulo">
+              Aprende paso a paso
+            </h1>
+            <div class="intro-text">
+              <p>
+                Descubre una coleccion completa de tutoriales prácticos que te
+                guiarán desde lo básico hasta técnicas avanzadas. Cada video
+                está cuidadosamente diseñado para ayudar a dominar nuevas
+                habilidades de manera efectiva
+              </p>
+            </div>
+          </div>
+        </section>
+        <br />
         <div class="row">
-            <div class="card" style="width: 18rem;">
-                <iframe class="card-img-top" src="https://www.youtube.com/embed/B2HoKyUCcT0" title="Tutorial Video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="card-body">
-                    <h5 class="card-title">Vinculación Kobotoolbox a QGIS</h5>
-                    
-                    <a href="https://www.youtube.com/watch?v=B2HoKyUCcT0" class="btn btn-primary" target="_blank">Ver en
-                        YouTube</a>
-                </div>
+          <div class="card" style="width: 18rem">
+            <iframe
+              class="card-img-top"
+              src="https://www.youtube.com/embed/B2HoKyUCcT0"
+              title="Tutorial Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Vinculación Kobotoolbox a QGIS</h5>
+              <p class="text-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                modi hic quo perferendis quisquam atque voluptates natus
+                debitis, iure possimus odio veritatis mollitia adipisci eligendi
+                voluptatem facere id nihil commodi!
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=B2HoKyUCcT0"
+                class="btn btn-primary"
+                target="_blank"
+                >Ver en YouTube</a
+              >
             </div>
-            <div class="card" style="width: 18rem;">
-                <iframe class="card-img-top" src="https://www.youtube.com/embed/udspImqFZXQ" title="Tutorial Video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="card-body">
-                    <h5 class="card-title">Uso de PlantNet en el Censo de Árbol Urbano</h5>
-                    
-                    <a href="https://www.youtube.com/watch?v=udspImqFZXQ" class="btn btn-primary" target="_blank">Ver en
-                        YouTube</a>
-                </div>
-            </div>
+          </div>
 
-            <div class="card" style="width: 18rem;">
-                <iframe class="card-img-top" src="https://www.youtube.com/embed/udspImqFZXQ" title="Tutorial Video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="card-body">
-                    <h5 class="card-title">Uso de PlantNet en el Censo de Árbol Urbano</h5>
-                    
-                    <a href="https://www.youtube.com/watch?v=udspImqFZXQ" class="btn btn-primary" target="_blank">Ver en
-                        YouTube</a>
-                </div>
+          <div class="card" style="width: 18rem">
+            <iframe
+              class="card-img-top"
+              src="https://www.youtube.com/embed/udspImqFZXQ"
+              title="Tutorial Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="card-body">
+              <h5 class="card-title">
+                Uso de PlantNet en el Censo de Árbol Urbano
+              </h5>
+              <p class="text-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti non at alias mollitia ad quas maiores, ex eligendi
+                dolores laboriosam, cumque numquam libero labore, distinctio et
+                harum magnam fuga sint!
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=udspImqFZXQ"
+                class="btn btn-primary"
+                target="_blank"
+                >Ver en YouTube</a
+              >
             </div>
+          </div>
 
-
-            <div class="card" style="width: 18rem;">
-                <iframe class="card-img-top" src="https://www.youtube.com/embed/udspImqFZXQ" title="Tutorial Video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <div class="card-body">
-                    <h5 class="card-title">Uso de PlantNet en el Censo de Árbol Urbano</h5>
-                    
-                    <a href="https://www.youtube.com/watch?v=udspImqFZXQ" class="btn btn-primary" target="_blank">Ver en
-                        YouTube</a>
-                </div>
+          <div class="card" style="width: 18rem">
+            <iframe
+              src="https://www.youtube.com/embed/Pz-Ucj0n32A?si=9DtmMnUBuSLMFWeQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="card-body">
+              <h5 class="card-title">
+                Uso de IA para actualización de datos taxonómicos
+              </h5>
+              <p class="text-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
+                deleniti non quia facilis exercitationem ducimus adipisci,
+                voluptatibus similique qui ea aut praesentium recusandae ipsam
+                ut, dolorem nobis quisquam nisi tempora.
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=udspImqFZXQ"
+                class="btn btn-primary"
+                target="_blank"
+                >Ver en YouTube</a
+              >
             </div>
-            
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <iframe
+              src="https://www.youtube.com/embed/TxJQwOI1o54?si=UqpO3osBlg2a1aJm"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div class="card-body">
+              <h5 class="card-title">SIGARU - Marco Jurídico</h5>
+              <p class="text-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quaerat, quo consequuntur. Accusamus, ea, autem laborum aliquid
+                numquam ab soluta tenetur excepturi quidem reiciendis nobis eius
+                nihil! Aspernatur laborum rem non!
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=udspImqFZXQ"
+                class="btn btn-primary"
+                target="_blank"
+                >Ver en YouTube</a
+              >
+            </div>
+          </div>
         </div>
 
+      </section>
 
-    </section>
+      <section class="productostotal">
+        <section class="products">
 
 
+          <div class="cartasProductos">
+            <h2 class="titulo siguienteTitulo">
+              Equipos y herramientas necesarias para el trabajo de campo
+            </h2>
+            <p>
+              Las medidas de seguridad protegen contra impactos, cortes y
+              exposición a elementos peligrosos, reduciendo el riesgo de
+              accidentes y lesiones. Garantizan un entorno de trabajo más
+              seguro y permiten realizar las tareas con mayor eficiencia y
+              confianza.
+            </p>
+            <div class="all-products">
+              <div class="product">
+                <div class="overlay overlay-casco"></div>
+                <img src="../images/casco.png" class="imgs" />
+              </div>
+              <div class="product">
+                <div class="overlay overlay-lentes"></div>
+                <img src="../images/gafas.png" class="imgs" />
+              </div>
+              <div class="product">
+                <div class="overlay overlay-tapones"></div>
+                <img src="../images/tapones.png" class="imgs" />
+              </div>
+            </div>
+          </div>
+          <section class="products">
+            <div class="all-products">
+              <div class="product">
+                <div class="overlay overlay-guantes"></div>
+                <img src="../images/guantes.png" class="imgs" />
+              </div>
+              <div class="product">
+                <div class="overlay overlay-chaleco"></div>
+                <img src="../images/chaleco.png" class="imgs" />
+              </div>
+              <div class="product">
+                <div class="overlay overlay-mangas"></div>
+                <img src="../images/mangas.png" class="imgs" />
+              </div>
+            </div>
+          </section>
+          <section class="products">
+            <div class="all-products">
+              <div class="product">
+                <div class="overlay overlay-botas"></div>
+                <img src="../images/botas.png" class="imgs" />
+              </div>
+              <div class="product">
+                <div class="overlay overlay-mascarilla"></div>
+                <img src="../images/mascarilla.png" class="imgs" />
+              </div>
+              <div class="product">
+                <div class="overlay overlay-id"></div>
+                <img src="../images/identidad.png" class="imgs" />
+              </div>
+            </div>
+          </section>
 
-    <script src="../JS/header_footer.js"></script>
+        </section>
+      </section>
+    </main>
+
+    <div class="footer-bottom">
+      <div class="contenido-footer">
+        <div class="contacto">
+          <h2>Contacto</h2>
+          <div class="contacto-email">
+            <h3>Email</h3>
+            <p>arboricultura@utn.ac.cr</p>
+          </div>
+          <div class="contacto-telefono">
+            <h3>Teléfono</h3>
+            <p>+506 26683550</p>
+          </div>
+        </div>
+        <div class="ubicacion">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.5514058214253!2d-85.08756072533592!3d10.430573389697935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9ffae9f090abdb%3A0x601e4130983c5ef2!2sUTN!5e1!3m2!1ses!2scr!4v1741070529697!5m2!1ses!2scr"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="logos">
+          <img src="../images/logo-utn.png" width="82%" alt="" />
+          <img src="../images/Logotipo TCU blanco.png" width="82%" alt="" />
+        </div>
+      </div>
+
+      <img src="../images/footer.jpg" width="100%" height="100%" alt="" />
+    </div>
+
     <script src="../JS/responsive.js"></script>
-</body>
-
+    <script src="../JS/petalos-animacion.js"></script>
+  </body>
 </html>

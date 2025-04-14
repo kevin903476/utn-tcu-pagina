@@ -1,143 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/petalos-style.css" />
+    <link rel="stylesheet" href="./CSS/principal.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/57b7a3c220.js"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./CSS/principal.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/57b7a3c220.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./CSS/stiles.css">
-  <title>Principal</title>
-</head>
+    <link rel="stylesheet" href="./CSS/nav-footer-style.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/arbol-icono.ico"
+      type="image/x-icon"
+    />
+    <title>Principal</title>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <nav>
+        <img id="logo-utn" src="./images/logo-utn.png" />
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="./index.html">Inicio</a></li>
+          <li class="sub-menu-phone">
+            <a href="#">Proyecto</a>
+            <!-- Submenú -->
+            <ul id="sub-menu-ul" class="sub-menu">
+              <li><a href="./HTMLS/sigaru.html">Sigaru</a></li>
+              <li><a href="./HTMLS/tutoriales.html">Capacitacion</a></li>
+              <li><a href="./HTMLS/cartografia.html">Cartografia</a></li>
+              <li><a href="#">Normativa</a></li>
+              <li><a href="#">Taxonomía</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu-phone">
+            <a href="#">Estudiantes</a>
+            <ul id="sub-menu-ul" class="sub-menu">
+              <li><a href="./HTMLS/cuentas.html">Cuenta</a></li>
+              <li>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSegqGsI6QiB6x8ia3ti4WMJG3drLg2lw0n2jTUocH0RsgPqcA/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Bitacora</a
+                >
+              </li>
+              <li><a href="./HTMLS/informe.html">Informe</a></li>
+              <li><a href="#">Informe Final</a></li>
+            </ul>
+          </li>
+          <li><a href="./HTMLS/nosotros.html">Nosotros</a></li>
+          <li><a href="./HTMLS/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <header>
-    <nav>
-      <img src="./images/Logotipo TCU blanco.png" style="width: 11%; height: auto;">
-      <div class="mobile-menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+    <!-- Carrusel modificado para ser responsive -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
       </div>
-      <ul class="nav-list">
-        <li><a href="./principal.html">Inicio</a></li>
-        <li>
-          <a href="#">Proyecto</a>
-          <!-- Submenú -->
-          <ul class="sub-menu">
-            <li><a href="./HTMLS/sigaru.html">Sigaru</a></li>
-            <li><a href="./HTMLS/tutoriales.html">Tutoriales</a></li>
-            <li><a href="./HTMLS/cartografia.html">Cartografia</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Estudiantes</a>
-          <ul class="sub-menu">
-            <li><a href="./HTMLS/cuentas.html">Cuenta</a></li>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSegqGsI6QiB6x8ia3ti4WMJG3drLg2lw0n2jTUocH0RsgPqcA/viewform" target="_blank" rel="noopener noreferrer">Bitacora</a></li>
-            <li><a href="./HTMLS/informe.html">Informe</a></li>
-          </ul>
-        </li>
-        <li><a href="./HTMLS/nosotros.html">Nosotros</a></li>
-        <li><a href="./HTMLS/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-  
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/Imagen1.jpg" alt="Árbol Urbano" />
+          <div class="carousel-caption">
+            <h2>La Gestión Integral del Árbol Urbano</h2>
+            <p>
+              Preservar y gestionar nuestros árboles urbanos es clave para la
+              sostenibilidad.
+            </p>
+            <a href="#" class="btn btn-warning btn-left">Conoce más aquí</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Imagen2.jpg" alt="Árbol Urbano" />
+          <div class="carousel-caption">
+            <h2>Beneficios del Arbolado Urbano</h2>
+            <p>
+              Los árboles urbanos reducen la contaminación y mejoran la calidad
+              del aire.
+            </p>
 
-  <div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
+            <a href="#" class="btn btn-warning btn-left">Descubre más</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Imagen6.jpg" alt="Árbol Urbano" />
+          <div class="carousel-caption">
+            <h2>Planificación y Cuidado</h2>
+            <p>
+              Una correcta planificación ayuda a mantener un entorno saludable.
+            </p>
+            <a href="#" class="btn btn-warning btn-left">Infórmate aquí</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Imagen8.jpg" alt="Árbol Urbano" />
+          <div class="carousel-caption">
+            <h2>Importancia de los Espacios Verdes</h2>
+            <p>
+              Los parques y jardines urbanos fomentan el bienestar, reducen el
+              estrés y mejoran la calidad de vida.
+            </p>
+            <a href="#" class="btn btn-warning btn-left">Infórmate aquí</a>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-inner">
+    <main>
+      <section id="contenido-adicional">
+        <div id="leaf-container"></div>
+        <!-- Contenedor de hojas -->
 
-      <div class="carousel-item active">
-        <img src="./images/arb1.jpeg" class="d-block w-100" alt="..." id="img1">
+        <section class="contenido-inicial">
+          <h2 class="titulo primerTitulo">
+            ¿De qué trata el proyecto de Arbolado Urbano?
+          </h2>
+          <div class="descripcion-proyecto">
+            <div>
+              <p>
+                🌿El propósito de este proyecto es funcionar como una
+                herramienta que potencie el desarrollo de un plan de manejo
+                integral del árbol urbano, mediante la articulación de la
+                participación ciudadana, las instituciones locales y la
+                universidad. Primeramente, se desarrollará un censo del árbol
+                urbano con el apoyo de herramientas de Sistema de Información
+                Geográfica, para la recopilación de datos de campo y el
+                seguimiento del manejo para cada árbol individual.🌿 <br />
+                <br />
+                🌿Seguidamente, se dispondrá de dicha información en tiempo real
+                y oportuno en un visor de acceso público. Los procesos y
+                herramientas que se construirán en este proyecto, se pondrán al
+                servicio de los gobiernos locales, para que sean estos quienes
+                se apropien del seguimiento del manejo del arbolado urbano.🌿
+              </p>
+            </div>
+            <img
+              src="./images/grupal.png"
+              alt=""
+              width="550px"
+              height="350px"
+            />
+          </div>
+        </section>
+
+        <section class="contenido">
+          <h2 class="titulo siguienteTitulo">Nuestra Meta</h2>
+          <div>
+            <div>
+              <p>
+                🌿 Mejorar la gestión y conservación del arbolado urbano en
+                sitios públicos dentro del perímetro urbano, mediante la
+                implementación de tecnologías de información geográfica que
+                permita obtener información precisa y actualizada sobre el
+                estado del arbolado, su distribución y necesidades de
+                mantenimiento, para la toma de decisiones informadas por parte
+                de los gobiernos locales, en beneficio de la calidad de vida de
+                los habitantes y la sostenibilidad ambiental de la zona urbana.
+                🌿
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="contenido">
+          <h2 class="titulo siguienteTitulo">
+            Actividades desarrolladas por la persona estudiante
+          </h2>
+          <div class="accordion custom-accordion" id="accordionExample">
+            <!-- Diseño del Sistema de Información Geográfica -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  📌 Diseño del Sistema de Información Geográfica
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      📝 Desarrollo y actualización de protocolos: salud
+                      ocupacional, gestión del riesgo, procedimientos de campo.
+                    </li>
+                    <li>
+                      📊 Actualización de base de datos: contactos
+                      organizacionales, lista taxonómica de especies, otros.
+                    </li>
+                    <li>
+                      📱 Análisis y/o desarrollo de herramientas: aplicaciones
+                      móviles, herramientas de integración de bases de datos.
+                    </li>
+                    <li>
+                      🛠️ Prototipado: elaboración de etiquetas para cada árbol
+                      individual, construcción de herramientas de campo.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Censo y Evaluación de Árboles -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  🌱 Censo y evaluación de los árboles
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      📍 Registrar la geolocalización y características de cada
+                      árbol.
+                    </li>
+                    <li>
+                      📲 Uso de formularios digitales y aplicaciones móviles.
+                    </li>
+                    <li>
+                      🌿 Verificación de especies con registros fotográficos y
+                      bases de datos.
+                    </li>
+                    <li>
+                      🗺️ Corrección de geolocalización en el sistema de
+                      información geográfica.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Construcción de herramientas de visualización -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  🖥️ Construcción de herramientas de visualización
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      🌍 Desarrollo de herramientas web de visualización de
+                      datos.
+                    </li>
+                    <li>
+                      🗺️ Construcción de cartografía institucional de la
+                      cobertura arbórea cantonal.
+                    </li>
+                    <li>
+                      📊 Desarrollo de un tablero de consulta de servicios
+                      ecosistémicos.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Evaluación de la calidad de la información -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  ✅ Evaluación de la calidad de la información
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      🔍 Monitoreo y verificación de la información recopilada.
+                    </li>
+                    <li>
+                      📌 Verificación de precisión en datos recolectados por
+                      estudiantes.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contenido">
+          <h3 class="titulo siguienteTitulo">Colaboradores</h3>
+          <p class="descargar-texto">
+            Estas son las instituciones que ya confían en nuestro proyecto y
+            colaboran activamente con nosotros. Si compartes nuestra visión y
+            quieres formar parte de esta iniciativa, estaremos encantados de
+            sumar esfuerzos contigo. ¡Contáctanos y hagamos equipo!
+          </p>
+
+          <div class="container-fluid-logo">
+            <div class="carousel-logos">
+              <div class="group">
+                <img src="./images/logo-utn.png" alt="Logo 1" class="logo">
+                <img src="./images/Logotipo TCU blanco.png" alt="Logo 2" class="logo">
+                <img src="./images/Logotipo TCU color.png" alt="Logo 3" class="logo">
+              </div>
+              <div class="group" aria-hidden="true">
+                <img src="./images/logo-utn.png" alt="Logo 1" class="logo">
+                <img src="./images/Logotipo TCU blanco.png" alt="Logo 2" class="logo">
+                <img src="./images/Logotipo TCU color.png" alt="Logo 3" class="logo">
+              </div>
+            </div>
+          </div>
+          <a
+           href="./HTMLS/contacto.html"
+           class="btn btn-primary descargar-btn"
+
+          >
+            📧 Contactar
+          </a>
+        </section>
+
+        <section class="contenido">
+          <h3 class="titulo siguienteTitulo">
+            Consulta el resumen del proyecto
+          </h3>
+          <p class="descargar-texto">
+            Para más detalles sobre el proyecto de arbolado urbano, descarga el
+            documento oficial en PDF.
+          </p>
+          <a
+            href="./docs/TCU-102A. Gestión integral del árbol urbano en mi comunidad.pdf"
+            class="btn btn-primary descargar-btn"
+            download
+          >
+            📥 Descargar PDF
+          </a>
+        </section>
+      </section>
+      
+    </main>
+
+    <div class="footer-bottom">
+      <div class="contenido-footer">
+        <div class="contacto">
+          <h2>Contacto</h2>
+          <div class="contacto-email">
+            <h3>Email</h3>
+            <p>arboricultura@utn.ac.cr</p>
+          </div>
+          <div class="contacto-telefono">
+            <h3>Teléfono</h3>
+            <p>+506 26683550</p>
+          </div>
+        </div>
+        <div class="ubicacion">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.5514058214253!2d-85.08756072533592!3d10.430573389697935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9ffae9f090abdb%3A0x601e4130983c5ef2!2sUTN!5e1!3m2!1ses!2scr!4v1741070529697!5m2!1ses!2scr"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="logos">
+          <img src="./images/logo-utn.png" width="82%" alt="" />
+          <img src="./images/Logotipo TCU blanco.png" width="82%" alt="" />
+        </div>
       </div>
 
-      <div class="carousel-item">
-        <img src="./images/arb2.jpeg" class="d-block w-100" alt="..." id="img2">
-      </div>
-
-      <div class="carousel-item">
-        <img src="./images/arb1.jpeg" class="d-block w-100" alt="..." id="img3">
-      </div>
+      <img src="/images/footer.jpg" width="100%" height="100%" alt="" />
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </body>
 
-  <section class="productostotal">
-    <section class="products">
-
-      <h2 style="color: white;">Medidas de Seguridad</h2>
-      <div class="all-products">
-        <div class="product">
-          <img src="./images/casco.png" style="width: 400px; height: 600px;" class="imgs">
-        </div>
-        <div class="product">
-          <img src="./images/gafas.png" style="width: 400px; height: 600px;" class="imgs">
-        </div>
-        <div class="product">
-          <img src="./images/tapones.png" style="width: 400px; height: 600px;" class="imgs">
-        </div>
-      </div>
-    </section>
-
-    <section class="products">
-      <div class="all-products">
-        <div class="product">
-          <img src="./images/guantes.png" style="width: 400px; height: 600px;" class="imgs">
-        </div>
-        <div class="product">
-          <img src="./images/chaleco.png" style="width: 400px; height: 600px;" class="imgs">
-        </div>
-        <div class="product">
-          <img src="./images/mangas.png" style="width: 400px; height: 600px;" class="imgs">
-        </div>
-      </div>
-    </section>
-
-    <section class="products">
-      <div class="all-products">
-        <div class="product">
-          <img src="./images/botas.png" style="width: 400px; height: 600px;" class="imgs">
-        </div>
-        <div class="product">
-          <img src="./images/mascarilla.png" style="width: 400px; height: 600px;" class="imgs">
-        </div>
-        <div class="product">
-          <img src="./images/identidad.png" style="width: 400px; height: 600px;" class="imgs">
-        </div>
-      </div>
-    </section>
-  </section>
-
-  <div class="footer-bottom">
-    <p>Trabajo Comunal Universitario | UTN </p>
-  </div>
-
+  <script src="./JS/petalos-animacion.js"></script>
   <script src="./JS/responsive.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-</body>
+    crossorigin="anonymous"
+  ></script>
 
+  
 </html>
