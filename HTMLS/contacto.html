@@ -1,60 +1,204 @@
-<!DOCTYPE html> 
-<html lang="en">
+  <!DOCTYPE html> 
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../CSS/contacto.css">
-  <link rel="stylesheet" href="../CSS/nav-footer-style.css">
-  <link rel="stylesheet" href="../CSS/petalos-style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-  <script src="https://kit.fontawesome.com/57b7a3c220.js" crossorigin="anonymous"></script>
-  <title>Contacto</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../CSS/nav-footer-style.css">
+    <link rel="stylesheet" href="../CSS/petalos-style.css">
+    <link rel="stylesheet" href="../CSS/contacto.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
 
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <header></header>
-  
-  <div class="container">
-    <div class="content">
-        <div id="leaf-container"></div>
-      <!-- Facebook Card -->
-      <div class="card facebook-card">
-        <div class="address details">
-          <a href="https://www.facebook.com/arboladourbanocrgu/"><i class="fa-brands fa-square-facebook"></i></a>
-          <div class="topic">Facebook</div>
-          <div class="text-one">Árboles Urbanos UTN</div>
-          <div class="description">En nuestra pantalla de Facebook encontrarás más acerca sobre el TCU de Gestión del Árbol Urbano. ¡Haz clic para más información!</div>
+    <title>Contacto</title>
+  </head>
+  <style>
+
+  </style>
+  <body>
+
+    <header></header>
+    
+    <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../images/Imagen3.jpg" alt="Árbol Urbano" />
+            <div class="carousel-caption">
+              <h2>Facebook</h2>
+              <p>
+                En nuestra pantalla de Facebook encontrarás más sobre el TCU de Gestión del Árbol Urbano: publicaciones, eventos y proyectos relacionados con el cuidado ambiental.
+                <br><br>¡Haz clic para conocer nuestro trabajo y unirte a la comunidad verde!
+              </p>
+              <a onclick="window.location.href='https://www.facebook.com/arboladourbanocrgu/'" class="btn btn-warning btn-left" >Más Información</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/imagen5.jpg" alt="Árbol Urbano" />
+            <div class="carousel-caption">
+              <h2>Telefono</h2>
+              <p>
+                Puedes comunicarte directamente con el personal encargado del TCU mediante este número.
+            <br><br>Resolveremos tus dudas, coordinaremos visitas o proyectos, y te brindaremos la información que necesites. ¡Estamos para ayudarte!
+          </p>
+          <a onclick="window.location.href='https://wa.link/arbo1j'" class="btn btn-warning btn-left" >Más Información</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/imagen4.jpg" alt="Árbol Urbano" />
+            <div class="carousel-caption">
+              <h2>Email</h2>
+              <p>
+                Si prefieres escribirnos, puedes enviarnos un correo electrónico a la dirección oficial del proyecto.
+                <br><br>Atendemos propuestas, sugerencias, dudas técnicas y cualquier consulta relacionada con el árbol urbano.
+              </p>
+              <a onclick="window.location.href='mailto:arboricultura@utn.ac.cr'" class="btn btn-warning btn-left" >Más Información</a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div id="leaf-container"></div>
+      
+      <div class="form-container">
+        <div class="contact-form">
+          <h2 class="titulo">Contáctanos</h2>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="presupuesto">Propósito</label>
+              <input type="text" id="presupuesto" name="presupuesto" class="form-control">
+            </div>
+            
+            <div class="form-group">
+              <label for="correo">Correo Electrónico</label>
+              <input type="email" id="correo" name="correo" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" class="form-control" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-enviar">Enviar</button>
+          </form>
         </div>
       </div>
 
-      <!-- Phone Card -->
-      <div class="card phone-card">
-        <div class="phone details">
-          <a href="https://wa.link/arbo1j"><i class="fas fa-phone-alt"></i></a>
-          <div class="topic">Teléfono</div>
-          <div class="text-one">+506 26683550</div>
-          <div class="description">A este número de contacto te puedes comunicar con la persona encargada del TCU para realizar consultas. ¡No dudes en escribirnos!</div>
+      <div class="social-icons-container">
+        <div class="social-icon">
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+            <span>INSTAGRAM</span>
+          </a>
+        </div>
+        <div class="social-icon">
+          <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+            <span>TWITTER</span>
+          </a>
+        </div>
+        <div class="social-icon">
+          <a href="https://www.facebook.com/arboladourbanocrgu/" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+            <span>FACEBOOK</span>
+          </a>
+        </div>
+        <div class="social-icon">
+          <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+            <span>LINKEDIN</span>
+          </a>
+        </div>
+        <div class="social-icon">
+          <a href="mailto:arboricultura@utn.ac.cr" target="_blank" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+            <span>EMAIL</span>
+          </a>
+        </div>
+        <div class="social-icon">
+          <a href="https://wa.link/arbo1j" target="_blank" aria-label="Teléfono">
+            <i class="fas fa-phone"></i>
+            <span>TELÉFONO</span>
+          </a>
         </div>
       </div>
+    
 
-      <!-- Email Card -->
-      <div class="card email-card">
-        <div class="email details">
-          <a href="mailto:arboricultura@utn.ac.cr"><i class="fa-solid fa-envelope"></i></a>
-          <div class="topic">Email</div>
-          <div class="text-one">arboricultura@utn.ac.cr</div>
-          <div class="description">Si prefieres escribirnos por correo electrónico, contáctanos en el email indicado. Responderemos a tus consultas con gusto.</div>
-        </div>
+      <div class="chi">
+        <i class="fab fa-instagram"></i>
       </div>
-    </div>
-  </div>
+      <i class="fa-sharp fa-regular fa-comment"></i>
 
-  <script src="../JS/header_footer.js"></script>
-  <script src="../JS/responsive.js"></script>
-  <script src="../JS/petalos-animacion.js"></script>
+    <script src="../JS/header_footer.js"></script>
+    <script src="./JS/petalos-animacion.js"></script>
+    <script src="./JS/responsive.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
 
-</body>
+  </body>
 
-</html>
+  </html>
