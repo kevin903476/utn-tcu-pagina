@@ -480,6 +480,26 @@ main{
   transition: filter 0.3s ease;
 }
 
+.construccion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.construccion p{
+  font-size: 16px;
+  font-style: italic;
+
+}
+
+.construccion img{
+  width: 170px;
+  height: 200px;
+
+}
+
 /* .logo:hover {
   filter: grayscale(0%);
 } */
