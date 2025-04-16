@@ -84,12 +84,18 @@
               sostenibles y resilientes.
             </p>
           </div>
+
+          <iframe src="./carusel-nosotros.html" 
+          style="width: 100%; border: none; overflow: hidden; margin-top: 2%; border-radius: 15px;" 
+          scrolling="no"></iframe>
+  
+  
         </div>
       </section>
 
       <section class="contenido">
         <div class="text-center">
-          <h1 class="primer-contenido titulo primerTitulo">
+          <h1 class="titulo siguienteTitulo">
             Bioalfabetización
           </h1>
 
@@ -200,7 +206,7 @@
 
       <section class="contenido">
         <div class="text-center">
-          <h1 class="primer-contenido titulo primerTitulo">
+          <h1 class="titulo siguienteTitulo">
             Noticias sobre Gestión integral del árbol urbano en mi comunidad
           </h1>
 
@@ -286,5 +292,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../JS/responsive.js"></script>
     <script src="../JS/petalos-animacion.js"></script>
+
+    <script>
+      window.addEventListener("message", function (e) {
+        if (e.data.tipo === "ajustarAltura") {
+          const iframe = document.querySelector("iframe[src='./carusel-nosotros.html']");
+          if (iframe) {
+            iframe.style.height = e.data.altura + "px";
+          }
+        }
+      });
+    </script>
+    
   </body>
 </html>
