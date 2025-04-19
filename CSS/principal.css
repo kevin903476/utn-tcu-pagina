@@ -19,6 +19,13 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+main * {
+  word-break: break-word; /* Evita que el texto se desborde */
+  overflow-wrap: break-word; /* Asegura que el texto se ajuste al contenedor */
+  hyphens: auto; /* Permite el uso de guiones para dividir palabras largas */
+  box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
+}
+
 main{
   margin-left: 13% !important;
   margin-right: 13% !important;
@@ -134,8 +141,7 @@ main{
 }
 .contenido ul {
   list-style: none;
-  padding-left: 0;
-  margin-left: 0;
+  
   text-align: center; 
 }
 
@@ -569,7 +575,7 @@ main{
     margin-right: 5% !important;
   }
   .margin-top{
-    margin-top: 35% !important;
+    margin-top: 30% !important;
   }
   .primer-contenido{
     margin-top: 10%;
@@ -652,7 +658,8 @@ main{
     padding: 0 1rem;
     display: block !important;
   }
-  
+
+
   .margin-top{
     margin-top: 45% !important;
   }
@@ -707,6 +714,7 @@ main{
   .carousel-caption .btn-left {
     position: relative;
   }
+
   
   .carousel-caption h2 {
     font-size: 1.2rem;
@@ -729,7 +737,7 @@ main{
 @media (max-width: 480px) {
 
   .margin-top{
-    margin-top: 75% !important;
+    margin-top: 60% !important;
   }
 
   .primer-contenido {
