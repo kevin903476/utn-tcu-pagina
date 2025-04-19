@@ -110,6 +110,47 @@ main{
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+.contenido{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.caja-lista{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin-top: 2%;
+  width: 90%;
+}
+.caja-lista a{
+  font-size: 1.3rem;
+  color: #333;
+}
+.caja-lista a:hover{
+  color: #012169;
+  background-color: #00000000;
+}
+.contenido ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  text-align: center; 
+}
+
+.contenido li {
+  margin-bottom: 2%;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.contenido li::before {
+  content: "🍃";
+  line-height: 1.6;
+}
+
+
 #contenido-adicional {
   position: relative;
   min-height: 600px;
