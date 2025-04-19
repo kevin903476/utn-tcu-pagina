@@ -19,6 +19,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+
+
+
 main * {
   word-break: break-word; /* Evita que el texto se desborde */
   overflow-wrap: break-word; /* Asegura que el texto se ajuste al contenedor */
