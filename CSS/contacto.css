@@ -201,12 +201,13 @@ main {
 }
 
 .carousel-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  width: 130px; /* o el valor que quieras */
+  margin: 0 auto;
+  display: block;
 }
+
 
 .carousel-card h3 {
   color: #13298b;
