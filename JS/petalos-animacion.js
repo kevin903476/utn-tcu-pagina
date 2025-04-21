@@ -1,6 +1,6 @@
 // Definir el número máximo de hojas según el dispositivo
 const MAX_LEAVES = window.innerWidth < 768 ? 9 : 13;
-const spawnRate = window.innerWidth < 768 ? 1000 : 800; // En móviles, se generan más lento
+const spawnRate = window.innerWidth < 768 ? 3000 : 1000; // En móviles, se generan más lento
 
 function createLeaf() {
     // Obtener el contenedor de hojas
@@ -20,7 +20,7 @@ function createLeaf() {
     container.appendChild(leaf); // Añadir al contenedor, no al body
     
     const startPosX = Math.random() * container.offsetWidth;
-    const duration = window.innerWidth < 768 ? Math.random() * 12 + 6 : Math.random() * 10 + 5;
+    const duration = window.innerWidth < 768 ? Math.random() * 25 + 15 : Math.random() * 20 + 10;
     const size = window.innerWidth < 768 ? Math.random() * 10 + 10 : Math.random() * 12 + 12;
 
     leaf.style.left = `${startPosX}px`;
