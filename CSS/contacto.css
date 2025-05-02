@@ -130,7 +130,11 @@ main {
   z-index: 2;
 }
 
-
+.caja-carousel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .carousel-section {
   display: flex;
   flex-direction: column;
