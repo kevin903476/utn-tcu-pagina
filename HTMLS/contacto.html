@@ -29,7 +29,14 @@
   <body>
     <header>
       <nav>
-        <img id="logo-utn" src="../images/logo-utn.png" />
+        <div class="logo">
+          <img id="logo-utn" src="../images/logo-utn.png" alt="Logo UTN" />
+          <img
+            id="logo-tcu"
+            src="../images/Logotipo TCU blanco.png"
+            alt="Logo TCU"
+          />
+        </div>
         <div class="mobile-menu">
           <div class="line1"></div>
           <div class="line2"></div>
@@ -60,7 +67,7 @@
                   >Bitácora</a
                 >
               </li>
-              <li><a href="../HTMLS/informe.html">Informe</a></li>
+              <li><a href="../HTMLS/informe.html">Resumen de Horas</a></li>
               <li><a href="../HTMLS/informe-final.html">Informe Final</a></li>
             </ul>
           </li>
@@ -73,7 +80,8 @@
     <div id="leaf-container"></div>
     <!-- Contenedor de hojas -->
 
-    <main>  
+    <main>
+      <div class="main-container">
       <section class="contenido margin-top">
         <div class="text-center">
           <h1 class="primer-contenido titulo primerTitulo">Contáctanos</h1>
@@ -85,7 +93,7 @@
           </p>
         </div>
       </section>
-      
+      <div class="caja-carousel">
         <div class="carousel-section">
           <div class="multi-card-carousel">
             <div class="carousel-track" id="carouselTrack">
@@ -93,8 +101,8 @@
                 <img src="../images/facebook.png" alt="Facebook" />
                 <h3>Facebook</h3>
                 <p>
-                  En nuestra pantalla de Facebook encontrarás más sobre el TCU
-                  de Gestión del Árbol Urbano.
+                  En nuestra pantalla de Facebook encontrarás más sobre el TCU de
+                  Gestión del Árbol Urbano.
                 </p>
                 <a
                   onclick="window.location.href='https://www.facebook.com/arboladourbanocrgu/'"
@@ -102,14 +110,14 @@
                   >Más Información</a
                 >
               </div>
-
+  
               <div class="carousel-card">
                 <img src="../images/gmail.png" alt="Gmail" />
                 <br />
                 <h3>GMAIL</h3>
                 <p>
-                  Si prefieres escribirnos, puedes enviarnos un correo
-                  electrónico a la dirección oficial del proyecto.
+                  Si prefieres escribirnos, puedes enviarnos un correo electrónico
+                  a la dirección oficial del proyecto.
                 </p>
                 <a
                   onclick="window.location.href='mailto:arboricultura@utn.ac.cr'"
@@ -117,7 +125,7 @@
                   >Más Información</a
                 >
               </div>
-
+  
               <div class="carousel-card">
                 <img src="../images/whatsapp.png" alt="Teléfono" />
                 <h3>Teléfono</h3>
@@ -132,7 +140,7 @@
                 >
               </div>
             </div>
-
+  
             <div class="carousel-controls">
               <button class="carousel-control prev" onclick="moveCarousel(-1)">
                 &#10094;
@@ -141,7 +149,7 @@
                 &#10095;
               </button>
             </div>
-
+  
             <div class="carousel-indicators">
               <span
                 class="carousel-indicator active"
@@ -152,235 +160,243 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <section class="contenido">
-          <div class="text-center">
-            <h1 class="titulo siguienteTitulo">Envíanos tu mensaje</h1>
-            <p>
-              Completa el formulario con tu información y tu mensaje. Una vez
-              enviado, llegará directamente a nuestro correo para ser atendido
-              lo más pronto posible.
-            </p>
-          </div>
-        </section>
 
-        <div class="form-container">
-          <div class="contact-form">
-            <h2 class="titulo">Contáctanos</h2>
-            <form action="#" method="post">
-              <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input
-                  type="text"
-                  id="nombre"
-                  name="nombre"
-                  class="form-control"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="presupuesto">Propósito</label>
-                <input
-                  type="text"
-                  id="presupuesto"
-                  name="presupuesto"
-                  class="form-control"
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="correo">Correo Electrónico</label>
-                <input
-                  type="email"
-                  id="correo"
-                  name="correo"
-                  class="form-control"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="mensaje">Mensaje</label>
-                <textarea
-                  id="mensaje"
-                  name="mensaje"
-                  class="form-control"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-
-              <button type="submit" class="btn-enviar">Enviar</button>
-            </form>
-          </div>
+      <section class="contenido">
+        <div class="text-center">
+          <h1 class="titulo siguienteTitulo">Envíanos tu mensaje</h1>
+          <p>
+            Completa el formulario con tu información y tu mensaje. Una vez
+            enviado, llegará directamente a nuestro correo para ser atendido lo
+            más pronto posible.
+          </p>
         </div>
+      </section>
+
+      <div class="form-container">
+        <div class="contact-form">
+          <h2 class="titulo">Contáctanos</h2>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="presupuesto">Propósito</label>
+              <input
+                type="text"
+                id="presupuesto"
+                name="presupuesto"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="correo">Correo Electrónico</label>
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                class="form-control"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+          </form>
+        </div>
+      </div>
     </main>
 
     <div class="footer-bottom">
       <div class="contenido-footer">
-        <div class="contacto">
-          <h2>Contacto</h2>
-          <div class="contacto-email">
-            <h3>Email</h3>
-            <p>arboricultura@utn.ac.cr</p>
+        <div class="caja-contenido">
+          <div class="contacto">
+            <h2>Contacto</h2>
+            <div class="contacto-email">
+              <h3>Email</h3>
+              <p>arboricultura@utn.ac.cr</p>
+            </div>
+            <div class="contacto-telefono">
+              <h3>Teléfono</h3>
+              <p>+506 26683550</p>
+            </div>
           </div>
-          <div class="contacto-telefono">
-            <h3>Teléfono</h3>
-            <p>+506 26683550</p>
+          <div class="ubicacion">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.5514058214253!2d-85.08756072533592!3d10.430573389697935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9ffae9f090abdb%3A0x601e4130983c5ef2!2sUTN!5e1!3m2!1ses!2scr!4v1741070529697!5m2!1ses!2scr"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="logos">
+            <img src="../images/logo-utn.png" width="82%" alt="" />
+            <img src="../images/Logotipo TCU blanco.png" width="82%" alt="" />
           </div>
         </div>
-        <div class="ubicacion">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.5514058214253!2d-85.08756072533592!3d10.430573389697935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9ffae9f090abdb%3A0x601e4130983c5ef2!2sUTN!5e1!3m2!1ses!2scr!4v1741070529697!5m2!1ses!2scr"
-            width="400"
-            height="300"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div class="caja-copy">
+          <p class="copyright">
+            © 2025 Universidad Técnica Nacional. Todos los derechos reservados.
+          </p>
         </div>
-        <div class="logos">
-          <img src="/images/logo-utn.png" width="82%" alt="" />
-          <img src="/images/Logotipo TCU blanco.png" width="82%" alt="" />
-        </div>
+        <br />
       </div>
-
       <img src="/images/footer.jpg" width="100%" height="100%" alt="" />
     </div>
+  </body>
 
-    <script src="../JS/petalos-animacion.js"></script>
-    <script src="../JS/responsive.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const track = document.getElementById("carouselTrack");
-        const cards = document.querySelectorAll(".carousel-card");
-        const indicators = document.querySelectorAll(".carousel-indicator");
-        const prevBtn = document.querySelector(".carousel-control.prev");
-        const nextBtn = document.querySelector(".carousel-control.next");
+  <script src="../JS/petalos-animacion.js"></script>
+  <script src="../JS/responsive.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const track = document.getElementById("carouselTrack");
+      const cards = document.querySelectorAll(".carousel-card");
+      const indicators = document.querySelectorAll(".carousel-indicator");
+      const prevBtn = document.querySelector(".carousel-control.prev");
+      const nextBtn = document.querySelector(".carousel-control.next");
 
-        let currentIndex = 0;
-        const cardWidth = cards[0].offsetWidth + 30; // Incluye el margen
+      let currentIndex = 0;
+      const cardWidth = cards[0].offsetWidth + 30; // Incluye el margen
 
-        // Función para actualizar la posición
-        function updateCarousel() {
-          track.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
+      // Función para actualizar la posición
+      function updateCarousel() {
+        track.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
 
-          // Actualizar indicadores
-          indicators.forEach((indicator, index) => {
-            indicator.classList.toggle("active", index === currentIndex);
-          });
-        }
-
-        // Event listeners para los botones
-        if (prevBtn && nextBtn) {
-          prevBtn.addEventListener("click", () => {
-            currentIndex = Math.max(currentIndex - 1, 0);
-            updateCarousel();
-          });
-
-          nextBtn.addEventListener("click", () => {
-            currentIndex = Math.min(currentIndex + 1, cards.length - 1);
-            updateCarousel();
-          });
-        }
-
-        // Configuración para móviles
-        if (window.innerWidth <= 768) {
-          let isDown = false;
-          let startX;
-          let scrollLeft;
-
-          track.addEventListener("mousedown", (e) => {
-            isDown = true;
-            startX = e.pageX - track.offsetLeft;
-            scrollLeft = track.scrollLeft;
-          });
-
-          track.addEventListener("mouseleave", () => {
-            isDown = false;
-          });
-
-          track.addEventListener("mouseup", () => {
-            isDown = false;
-          });
-
-          track.addEventListener("mousemove", (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - track.offsetLeft;
-            const walk = (x - startX) * 2;
-            track.scrollLeft = scrollLeft - walk;
-          });
-
-          // Eventos táctiles
-          track.addEventListener("touchstart", (e) => {
-            isDown = true;
-            startX = e.touches[0].pageX - track.offsetLeft;
-            scrollLeft = track.scrollLeft;
-          });
-
-          track.addEventListener("touchend", () => {
-            isDown = false;
-          });
-
-          track.addEventListener("touchmove", (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.touches[0].pageX - track.offsetLeft;
-            const walk = (x - startX) * 2;
-            track.scrollLeft = scrollLeft - walk;
-          });
-        }
-
-        // Redimensionamiento
-        window.addEventListener("resize", function () {
-          const newCardWidth = cards[0].offsetWidth + 30;
-          track.style.transform = `translateX(${
-            -currentIndex * newCardWidth
-          }px)`;
+        // Actualizar indicadores
+        indicators.forEach((indicator, index) => {
+          indicator.classList.toggle("active", index === currentIndex);
         });
-      });
-    </script>
+      }
 
-    <!-- EmailJS Core -->
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-      (function () {
-        emailjs.init("XTLMXQ98PnlkAiPTB"); // Tu Public Key
-      })();
+      // Event listeners para los botones
+      if (prevBtn && nextBtn) {
+        prevBtn.addEventListener("click", () => {
+          currentIndex = Math.max(currentIndex - 1, 0);
+          updateCarousel();
+        });
 
-      // Envío de formulario
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector("form");
-        form.setAttribute("id", "contact-form");
+        nextBtn.addEventListener("click", () => {
+          currentIndex = Math.min(currentIndex + 1, cards.length - 1);
+          updateCarousel();
+        });
+      }
 
-        form.addEventListener("submit", function (e) {
+      // Configuración para móviles
+      if (window.innerWidth <= 768) {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        track.addEventListener("mousedown", (e) => {
+          isDown = true;
+          startX = e.pageX - track.offsetLeft;
+          scrollLeft = track.scrollLeft;
+        });
+
+        track.addEventListener("mouseleave", () => {
+          isDown = false;
+        });
+
+        track.addEventListener("mouseup", () => {
+          isDown = false;
+        });
+
+        track.addEventListener("mousemove", (e) => {
+          if (!isDown) return;
           e.preventDefault();
-
-          emailjs.sendForm("service_7r6hawa", "template_sjrv91d", this).then(
-            function () {
-              mostrarModal("✅ Correo enviado correctamente");
-              form.reset();
-            },
-            function (error) {
-              console.error("Error:", error);
-              mostrarModal("❌ Hubo un error, intente más tarde");
-            }
-          );
+          const x = e.pageX - track.offsetLeft;
+          const walk = (x - startX) * 2;
+          track.scrollLeft = scrollLeft - walk;
         });
-      });
 
-      // Modal simple
-      function mostrarModal(mensaje) {
-        const modal = document.createElement("div");
-        modal.innerHTML = `
+        // Eventos táctiles
+        track.addEventListener("touchstart", (e) => {
+          isDown = true;
+          startX = e.touches[0].pageX - track.offsetLeft;
+          scrollLeft = track.scrollLeft;
+        });
+
+        track.addEventListener("touchend", () => {
+          isDown = false;
+        });
+
+        track.addEventListener("touchmove", (e) => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.touches[0].pageX - track.offsetLeft;
+          const walk = (x - startX) * 2;
+          track.scrollLeft = scrollLeft - walk;
+        });
+      }
+
+      // Redimensionamiento
+      window.addEventListener("resize", function () {
+        const newCardWidth = cards[0].offsetWidth + 30;
+        track.style.transform = `translateX(${-currentIndex * newCardWidth}px)`;
+      });
+    });
+  </script>
+
+  <!-- EmailJS Core -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("XTLMXQ98PnlkAiPTB"); // Tu Public Key
+    })();
+
+    // Envío de formulario
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector("form");
+      form.setAttribute("id", "contact-form");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_7r6hawa", "template_sjrv91d", this).then(
+          function () {
+            mostrarModal("✅ Correo enviado correctamente");
+            form.reset();
+          },
+          function (error) {
+            console.error("Error:", error);
+            mostrarModal("❌ Hubo un error, intente más tarde");
+          }
+        );
+      });
+    });
+
+    // Modal simple
+    function mostrarModal(mensaje) {
+      const modal = document.createElement("div");
+      modal.innerHTML = `
       <div style="position:fixed;top:0;left:0;width:100%;height:100%;background:#00000080;display:flex;justify-content:center;align-items:center;z-index:9999">
         <div style="background:white;padding:2rem;border-radius:10px;max-width:300px;text-align:center;font-family:sans-serif;box-shadow:0 0 10px rgba(0,0,0,0.3)">
           <p>${mensaje}</p>
@@ -388,8 +404,7 @@
             onclick="this.parentElement.parentElement.remove()">Cerrar</button>
         </div>
       </div>`;
-        document.body.appendChild(modal);
-      }
-    </script>
-  </body>
+      document.body.appendChild(modal);
+    }
+  </script>
 </html>

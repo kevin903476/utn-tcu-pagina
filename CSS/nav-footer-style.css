@@ -9,10 +9,18 @@ header {
     background-color: #333;
     z-index: 1000;
 }
-#logo-utn{
-    width: 8%;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 35px; /* Espacio entre los logos */
+}
+
+#logo-utn,
+#logo-tcu {
+    width: 65%;
     height: auto;
 }
+
 a.logo {
     color: #fff;
     font-weight: 600;
@@ -176,12 +184,24 @@ nav {
     right: 0; /* Alinea a la derecha */
     margin-top: 55px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-
     z-index: 1; /* Asegura que el contenido esté por encima de la imagen */
     padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
+}
+.caja-contenido{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    margin-top: 15px;
 }
 
 .logos{
@@ -264,7 +284,18 @@ nav {
         flex-direction: column;
         
     }
+
+    .ubicacion{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
     .contenido-footer {
+        position: static;
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center;
+        width: 85%;
+    }
+    .caja-contenido {
         position: static;
         flex-direction: column; /* Cambia a columna en pantallas pequeñas */
         align-items: center;
@@ -274,6 +305,18 @@ nav {
         margin-bottom: 40px;
     }
     .ubicacion iframe{width: 300px;}
+
+
+    .logo {
+        justify-content: center;
+        gap: 30px; /* Reducir el espacio entre los logos */
+    }
+
+    #logo-utn,
+    #logo-tcu {
+        width: 65%; /* Ajuste para pantallas medianas */
+        height: auto;
+    }
     
 }
 
@@ -321,15 +364,22 @@ nav {
     .socials a i {
         font-size: 25px;
     }
-
-    .footer-bottom p {
-        font-size: 14px;
-    }
-}
-
-/* Estilos para dispositivos de pantalla mediana y grande */
-@media only screen and (min-width: 769px) {
     footer {
         padding-left: 100px;
     }
+    .footer-bottom p {
+        font-size: 14px;
+    }
+
+    .logo {
+        align-items: center;
+        gap: 30px;
+    }
+
+    #logo-utn,
+    #logo-tcu {
+        width: 110%; /* Aumento del tamaño para mejorar la visibilidad */
+        height: auto;
+    }
 }
+

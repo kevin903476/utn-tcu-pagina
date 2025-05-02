@@ -18,7 +18,11 @@
 
     <link rel="stylesheet" href="../CSS/nav-footer-style.css" />
     <link rel="stylesheet" href="../CSS/cuentas.css" />
-    <link rel="shortcut icon" href="/images/arbol-icono.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/images/arbol-icono.ico"
+      type="image/x-icon"
+    />
     <title>Cuentas y Formularios</title>
     <style>
       .productostotal {
@@ -30,7 +34,14 @@
   <body>
     <header>
       <nav>
-        <img id="logo-utn" src="../images/logo-utn.png" />
+        <div class="logo">
+          <img id="logo-utn" src="../images/logo-utn.png" alt="Logo UTN" />
+          <img
+            id="logo-tcu"
+            src="../images/Logotipo TCU blanco.png"
+            alt="Logo TCU"
+          />
+        </div>
         <div class="mobile-menu">
           <div class="line1"></div>
           <div class="line2"></div>
@@ -61,9 +72,8 @@
                   >Bitácora</a
                 >
               </li>
-              <li><a href="../HTMLS/informe.html">Informe</a></li>
+              <li><a href="../HTMLS/informe.html">Resumen de Horas</a></li>
               <li><a href="../HTMLS/informe-final.html">Informe Final</a></li>
-
             </ul>
           </li>
           <li><a href="../HTMLS/nosotros.html">Nosotros</a></li>
@@ -74,257 +84,285 @@
     <div id="leaf-container"></div>
     <!-- Contenedor de hojas -->
     <main>
-      
-      <div class="container main-content">
+      <div class="main-container">
+        <div class="container main-content">
+          <section class="contenido">
+            <h1 class="section-title titulo">Kit del Estudiante</h1>
 
-        <section class="contenido">
-          <h1 class="section-title titulo">Kit del Estudiante</h1>
+            <div class="intro-text">
+              <p>
+                Encuentra aquí todos los recursos necesarios para tu curso: las
+                aplicaciones requeridas, formularios de práctica y materiales
+                complementarios.
+              </p>
+              <p>
+                Todo organizado para que puedas enfocarte en tu aprendizaje.
+              </p>
+            </div>
 
-          <div class="intro-text">
-            <p>
-              Encuentra aquí todos los recursos necesarios para tu curso: las
-              aplicaciones requeridas, formularios de práctica y materiales
-              complementarios.
-            </p>
-            <p>Todo organizado para que puedas enfocarte en tu aprendizaje.</p>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card-custom">
-                <div class="card-custom1">
-                  <h2 class="section-title">Cuentas y Formularios</h2>
-                  <br />
-                  <div>
-                    <h4>¿Como solicito mi cuenta de Arcgis o KoboToolbox?</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card-custom">
+                  <div class="card-custom1">
+                    <h2 class="section-title">Cuentas y Formularios</h2>
                     <br />
-                    <p>
-                      En caso de no tener una cuenta favor comunicarse con el
-                      tutor asignado
-                    </p>
+                    <div>
+                      <h4>¿Como solicito mi cuenta de Arcgis o KoboToolbox?</h4>
+                      <br />
+                      <p>
+                        En caso de no tener una cuenta favor comunicarse con el
+                        tutor asignado
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-md-6">
-              <div class="card-custom">
-                <h2 class="section-title">Arcgis Survey123</h2>
-                <div class="text-center">
-                  <a href="https://survey123.arcgis.com/?signin=true">
-                    <img
-                      class="large-icon"
-                      src="../images/Survey123-icon.png"
-                      alt="ArcGIS Survey123 icon"
-                    />
-                  </a>
-                </div>
-
-                <div class="toolbox-section">
-                  <h2 class="section-title">KoboToolbox</h2>
-
+              <div class="col-md-6">
+                <div class="card-custom">
+                  <h2 class="section-title">Arcgis Survey123</h2>
                   <div class="text-center">
-                    <a href="https://kf.arboricultura.utn.ac.cr/">
+                    <a href="https://survey123.arcgis.com/?signin=true">
                       <img
                         class="large-icon"
-                        src="../images/kobotoolbox-icon.png"
-                        alt="KoboToolbox icon"
+                        src="../images/Survey123-icon.png"
+                        alt="ArcGIS Survey123 icon"
                       />
                     </a>
                   </div>
+
+                  <div class="toolbox-section">
+                    <h2 class="section-title">KoboToolbox</h2>
+
+                    <div class="text-center">
+                      <a href="https://kf.arboricultura.utn.ac.cr/">
+                        <img
+                          class="large-icon"
+                          src="../images/kobotoolbox-icon.png"
+                          alt="KoboToolbox icon"
+                        />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-      </div>
-      <div class="container">
-        <section class="contenido">
-
-        
-        <h2 class="titulo siguienteTitulo">Formularios de Survey123</h2>
-        <p>
-          Estos formularios de Survey123 te permiten recopilar y gestionar
-          información de manera eficiente. Cada opción está diseñada para
-          facilitar el registro de datos específicos, asegurando precisión y
-          accesibilidad. ¡Selecciona el formulario que necesites y comienza a
-          capturar información fácilmente!
-        </p>
-        <br>
-        <div class="row">
-          <!-- Datos Generales -->
-          <div class="col-md-4 mb-4">
-            <div class="card card-formulario">
-              <div class="card-body text-center">
-                <img
-                  src="../images/analisis-de-los-datos-blue.png"
-                  alt="Datos Generales icon"
-                  class="formulario-icon"
-                />
-                <h5 class="card-title">Datos Generales</h5>
-                <p class="card-text">
-                  Si quieres acceder a este formulario presiona el botón de
-                  abajo
-                </p>
-                <a href="https://arcg.is/0aC0S8" class="btn btn-dark"
-                  >Acceder</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Dendro-metría -->
-          <div class="col-md-4 mb-4">
-            <div class="card card-formulario">
-              <div class="card-body text-center">
-                <img
-                  src="../images/arbol-blue.png"
-                  alt="Dendrometria icon"
-                  class="formulario-icon"
-                />
-                <h5 class="card-title">Dendro-metría</h5>
-                <p class="card-text">
-                  Si quieres acceder a este formulario presiona el botón de
-                  abajo
-                </p>
-                <a href="https://arcg.is/bLanO" class="btn btn-dark">Acceder</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Evaluación Básica -->
-          <div class="col-md-4 mb-4">
-            <div class="card card-formulario">
-              <div class="card-body text-center">
-                <img
-                  src="../images/evaluacion-de-riesgos-blue.png"
-                  alt="Evaluacion Basica icon"
-                  class="formulario-icon"
-                />
-                <h5 class="card-title">Evaluación Básica</h5>
-                <p class="card-text">
-                  Si quieres acceder a este formulario presiona el botón de
-                  abajo
-                </p>
-                <a href="https://arcg.is/i0L5r" class="btn btn-dark">Acceder</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Especies -->
-          <div class="col-md-4 mb-4">
-            <div class="card card-formulario">
-              <div class="card-body text-center">
-                <img
-                  src="../images/hoja-blue.png"
-                  alt="Especies icon"
-                  class="formulario-icon"
-                />
-                <h5 class="card-title">Especies</h5>
-                <p class="card-text">
-                  Si quieres acceder a este formulario presiona el botón de
-                  abajo
-                </p>
-                <a href="https://arcg.is/18C0ii" class="btn btn-dark"
-                  >Acceder</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Informe Final -->
-          <div class="col-md-4 mb-4">
-            <div class="card card-formulario">
-              <div class="card-body text-center">
-                <img
-                  src="../images/reporte-de-negocios-blue.png"
-                  alt="Informe Final icon"
-                  class="formulario-icon"
-                />
-                <h5 class="card-title">Informe Final</h5>
-                <p class="card-text">
-                  Si quieres acceder a este formulario presiona el botón de
-                  abajo
-                </p>
-                <a href="https://arcg.is/z9Snz3" class="btn btn-dark"
-                  >Acceder</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Plan De Trabajo -->
-          <div class="col-md-4 mb-4">
-            <div class="card card-formulario">
-              <div class="card-body text-center">
-                <img
-                  src="../images/tareas-diarias-blue.png"
-                  alt="Plan De Trabajo icon"
-                  class="formulario-icon"
-                />
-                <h5 class="card-title">Plan De Trabajo</h5>
-                <p class="card-text">
-                  Si quieres acceder a este formulario presiona el botón de
-                  abajo
-                </p>
-                <a href="#" class="btn btn-dark">Acceder</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Solicitud De Prórroga -->
-          <div class="col-md-4 mb-4">
-            <div class="card card-formulario">
-              <div class="card-body text-center">
-                <img
-                  src="../images/posponer-blue.png"
-                  alt="Solicitud De Prórroga icon"
-                  class="formulario-icon"
-                />
-                <h5 class="card-title">Solicitud De Prórroga</h5>
-                <p class="card-text">
-                  Si quieres acceder a este formulario presiona el botón de
-                  abajo
-                </p>
-                <a href="#" class="btn btn-dark">Acceder</a>
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
-      </section>
+        <div class="container">
+          <section class="contenido">
+            <h2 class="titulo siguienteTitulo">
+              Formularios de gestión del árbol urbano
+            </h2>
+            <p>
+              Estos formularios de Survey123 te permiten recopilar y gestionar
+              información de manera eficiente. Cada opción está diseñada para
+              facilitar el registro de datos específicos, asegurando precisión y
+              accesibilidad. ¡Selecciona el formulario que necesites y comienza
+              a capturar información fácilmente!
+            </p>
+            <br />
+            <div class="row">
+              <!-- Datos Generales -->
+              <div class="col-md-4 mb-4">
+                <div class="card card-formulario">
+                  <div class="card-body text-center">
+                    <img
+                      src="../images/analisis-de-los-datos-blue.png"
+                      alt="Datos Generales icon"
+                      class="formulario-icon"
+                    />
+                    <h5 class="card-title">Datos Generales</h5>
+                    <p class="card-text">
+                      Si quieres acceder a este formulario presiona el botón de
+                      abajo
+                    </p>
+                    <a href="https://arcg.is/0aC0S8" class="btn btn-dark"
+                      >Acceder</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dendro-metría -->
+              <div class="col-md-4 mb-4">
+                <div class="card card-formulario">
+                  <div class="card-body text-center">
+                    <img
+                      src="../images/arbol-blue.png"
+                      alt="Dendrometria icon"
+                      class="formulario-icon"
+                    />
+                    <h5 class="card-title">Dendro-metría</h5>
+                    <p class="card-text">
+                      Si quieres acceder a este formulario presiona el botón de
+                      abajo
+                    </p>
+                    <a href="https://arcg.is/bLanO" class="btn btn-dark"
+                      >Acceder</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Evaluación Básica -->
+              <div class="col-md-4 mb-4">
+                <div class="card card-formulario">
+                  <div class="card-body text-center">
+                    <img
+                      src="../images/evaluacion-de-riesgos-blue.png"
+                      alt="Evaluacion Basica icon"
+                      class="formulario-icon"
+                    />
+                    <h5 class="card-title">Evaluación Básica</h5>
+                    <p class="card-text">
+                      Si quieres acceder a este formulario presiona el botón de
+                      abajo
+                    </p>
+                    <a href="https://arcg.is/i0L5r" class="btn btn-dark"
+                      >Acceder</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Especies -->
+              <div class="col-md-4 mb-4">
+                <div class="card card-formulario">
+                  <div class="card-body text-center">
+                    <img
+                      src="../images/hoja-blue.png"
+                      alt="Especies icon"
+                      class="formulario-icon"
+                    />
+                    <h5 class="card-title">Especies</h5>
+                    <p class="card-text">
+                      Si quieres acceder a este formulario presiona el botón de
+                      abajo
+                    </p>
+                    <a href="https://arcg.is/18C0ii" class="btn btn-dark"
+                      >Acceder</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="contenido">
+            <h2 class="titulo siguienteTitulo">
+              Formularios de gestión del TCU
+            </h2>
+            <p>
+              Estos documentos permiten organizar, registrar y dar seguimiento a
+              actividades dentro de programas de acción social. Facilitan la
+              planificación, evaluación de resultados y gestión de tiempos,
+              asegurando el cumplimiento de objetivos y la transparencia en el
+              desarrollo de los proyectos.
+            </p>
+            <br />
+            <div class="row">
+              <!-- Informe Final -->
+              <div class="col-md-4 mb-4">
+                <div class="card card-formulario">
+                  <div class="card-body text-center">
+                    <img
+                      src="../images/reporte-de-negocios-blue.png"
+                      alt="Informe Final icon"
+                      class="formulario-icon"
+                    />
+                    <h5 class="card-title">Informe Final</h5>
+                    <p class="card-text">
+                      Si quieres acceder a este formulario presiona el botón de
+                      abajo
+                    </p>
+                    <a href="https://arcg.is/z9Snz3" class="btn btn-dark"
+                      >Acceder</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Plan De Trabajo -->
+              <div class="col-md-4 mb-4">
+                <div class="card card-formulario">
+                  <div class="card-body text-center">
+                    <img
+                      src="../images/tareas-diarias-blue.png"
+                      alt="Plan De Trabajo icon"
+                      class="formulario-icon"
+                    />
+                    <h5 class="card-title">Plan De Trabajo</h5>
+                    <p class="card-text">
+                      Si quieres acceder a este formulario presiona el botón de
+                      abajo
+                    </p>
+                    <a href="#" class="btn btn-dark">Acceder</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Solicitud De Prórroga -->
+              <div class="col-md-4 mb-4">
+                <div class="card card-formulario">
+                  <div class="card-body text-center">
+                    <img
+                      src="../images/posponer-blue.png"
+                      alt="Solicitud De Prórroga icon"
+                      class="formulario-icon"
+                    />
+                    <h5 class="card-title">Solicitud De Prórroga</h5>
+                    <p class="card-text">
+                      Si quieres acceder a este formulario presiona el botón de
+                      abajo
+                    </p>
+                    <a href="#" class="btn btn-dark">Acceder</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
 
     <div class="footer-bottom">
       <div class="contenido-footer">
-        <div class="contacto">
-          <h2>Contacto</h2>
-          <div class="contacto-email">
-            <h3>Email</h3>
-            <p>arboricultura@utn.ac.cr</p>
+        <div class="caja-contenido">
+          <div class="contacto">
+            <h2>Contacto</h2>
+            <div class="contacto-email">
+              <h3>Email</h3>
+              <p>arboricultura@utn.ac.cr</p>
+            </div>
+            <div class="contacto-telefono">
+              <h3>Teléfono</h3>
+              <p>+506 26683550</p>
+            </div>
           </div>
-          <div class="contacto-telefono">
-            <h3>Teléfono</h3>
-            <p>+506 26683550</p>
+          <div class="ubicacion">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.5514058214253!2d-85.08756072533592!3d10.430573389697935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9ffae9f090abdb%3A0x601e4130983c5ef2!2sUTN!5e1!3m2!1ses!2scr!4v1741070529697!5m2!1ses!2scr"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="logos">
+            <img src="../images/logo-utn.png" width="82%" alt="" />
+            <img src="../images/Logotipo TCU blanco.png" width="82%" alt="" />
           </div>
         </div>
-        <div class="ubicacion">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.5514058214253!2d-85.08756072533592!3d10.430573389697935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9ffae9f090abdb%3A0x601e4130983c5ef2!2sUTN!5e1!3m2!1ses!2scr!4v1741070529697!5m2!1ses!2scr"
-            width="400"
-            height="300"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div class="caja-copy">
+          <p class="copyright">
+            © 2025 Universidad Técnica Nacional. Todos los derechos reservados.
+          </p>
         </div>
-        <div class="logos">
-          <img src="/images/logo-utn.png" width="82%" alt="" />
-          <img src="/images/Logotipo TCU blanco.png" width="82%" alt="" />
-        </div>
+        <br />
       </div>
-
       <img src="/images/footer.jpg" width="100%" height="100%" alt="" />
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

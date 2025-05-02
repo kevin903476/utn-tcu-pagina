@@ -29,7 +29,14 @@
   <body>
     <header>
       <nav>
-        <img id="logo-utn" src="../images/logo-utn.png" />
+        <div class="logo">
+          <img id="logo-utn" src="../images/logo-utn.png" alt="Logo UTN" />
+          <img
+            id="logo-tcu"
+            src="../images/Logotipo TCU blanco.png"
+            alt="Logo TCU"
+          />
+        </div>
         <div class="mobile-menu">
           <div class="line1"></div>
           <div class="line2"></div>
@@ -60,7 +67,7 @@
                   >Bitácora</a
                 >
               </li>
-              <li><a href="../HTMLS/informe.html">Informe</a></li>
+              <li><a href="../HTMLS/informe.html">Resumen de Horas</a></li>
               <li><a href="../HTMLS/informe-final.html">Informe Final</a></li>
             </ul>
           </li>
@@ -70,110 +77,137 @@
       </nav>
     </header>
 
-    <div id="leaf-container" style="height: 10vh !important;"></div>
+    <div id="leaf-container" style="height: 10vh !important"></div>
     <!-- Contenedor de hojas -->
     <main>
-      <section class="contenido margin-top">
-        <h1 class="primer-contenido titulo primerTitulo">
-          Instrucciones para la Elaboración del Informe Final
-        </h1>
-        <p>
-          Esto informe está dirigido a estudiantes que han completado el TCU y
-          cuentan con la aprobación del académico encargado del proyecto.
-          <br /> <br>
-          Los requisitos son:
-        </p>
-        <div class="caja-lista">
-          <ul>
-            <li> Haber cumplido con las 150 horas del TCU.</li>
-            <li>
-               Haber alcanzado las metas establecidas en el plan de trabajo.
-            </li>
-          </ul>
-        </div>
+      <div class="main-container">
+        <section class="contenido margin-top">
+          <h1 class="primer-contenido titulo primerTitulo">
+            Instrucciones para la Elaboración del Informe Final
+          </h1>
+          <p>
+            Esto informe está dirigido a estudiantes que han completado el TCU y
+            cuentan con la aprobación del académico encargado del proyecto.
+            <br />
+            <br />
+            Los requisitos son:
+          </p>
+          <div class="caja-lista">
+            <ul>
+              <li>Haber cumplido con las 150 horas del TCU.</li>
+              <li>
+                Haber alcanzado las metas establecidas en el plan de trabajo.
+              </li>
+            </ul>
+          </div>
 
-        <br />
-        <p>
-          En el siguiente proceso usted completará un formulario de tipo
-          encuesta, que a través de la herramienta de Survey123 y una plantilla
-          existente, le permitirá generar un informe en formato PDF.
-        </p>
+          <br />
+          <p>
+            En el siguiente proceso usted completará un formulario de tipo
+            encuesta, que a través de la herramienta de Survey123 y una
+            plantilla existente, le permitirá generar un informe en formato PDF.
+          </p>
+        </section>
+        <section class="contenido">
+          <h1 class="titulo siguienteTitulo">
+            Para la elaboración del informe Final siga los siguientes pasos
+          </h1>
 
-      </section>
-      <section class="contenido">
-        <h1 class="titulo siguienteTitulo">
-          Para la elaboración del informe Final siga los siguientes pasos
-        </h1>
-
-
-        <div class="caja-lista">
-          <ul>
-            <li>1. Iniciar sesión en Survey123 desde la aplicación Survey123 en su dispositivo móvil,  o bien, en su computadora mediante la aplicación descargable en Microsoft Store. Utilice su usuario y contraseña de ArcGIS.</li>
-            <li>
-              2. Completar el formulario TCUAU-InformeFinalEstudiante. Puede acceder al formulario directamente mediante el siguiente enlace:<a href="https://arcg.is/z9Snz3">https://arcg.is/z9Snz3</a>.
-            </li>
-            <li>
-              3. Una vez completado el formulario, ingrese al navegador web de su preferencia al siguiente enlace<a href="https://survey123.arcgis.com.">https://survey123.arcgis.com.</a>Utilice su usuario y contraseña de ArcGIS.
-            </li>
-            <li>
-              4. Seleccionar con el Mouse la linea de registro del informe para exportar. La linea del registro se resaltará en color celeste.
-            </li>
-            <li>
-              5. Dar clic en el menú informe en la parte superior de la ventana de Survey123. Se desplegará una ventana emergente en la cual deberá completar la siguiente información: 
-            </li>
-            <li>
-              5.1. Elegir los registros a incluir: Solo registros seleccionados
-            </li>
-            <li>
-              5.2. Seleccionar una plantilla: dejar la plantilla por defecto TCUAU-InformeFinalEstudiante-Survey123-20240809.docx
-            </li>
-            <li>
-              5.3. Configuración de salida, en el  Nombre de informe suprimir el nombre por defecto y pegar la siguiente información: ${id_estudiante}-IF. ${nombre_estudiante}
-            </li>
-            <li>
-              5.4. Formato: Seleccionar Formato de documento portatil (.pdf)
-            </li>
-            <li>
-              6. Dar clic en Generar. Esperar que se genere el documento en PDF y subirlo en el espacio correspondiente del Campus Virtual
-            </li>
-          </ul>
-        </div>
-      </section>
-
-
-
+          <div class="caja-lista">
+            <ul>
+              <li>
+                1. Iniciar sesión en Survey123 desde la aplicación Survey123 en
+                su dispositivo móvil, o bien, en su computadora mediante la
+                aplicación descargable en Microsoft Store. Utilice su usuario y
+                contraseña de ArcGIS.
+              </li>
+              <li>
+                2. Completar el formulario TCUAU-InformeFinalEstudiante. Puede
+                acceder al formulario directamente mediante el siguiente
+                enlace:<a href="https://arcg.is/z9Snz3"
+                  >https://arcg.is/z9Snz3</a
+                >.
+              </li>
+              <li>
+                3. Una vez completado el formulario, ingrese al navegador web de
+                su preferencia al siguiente enlace<a
+                  href="https://survey123.arcgis.com."
+                  >https://survey123.arcgis.com.</a
+                >Utilice su usuario y contraseña de ArcGIS.
+              </li>
+              <li>
+                4. Seleccionar con el Mouse la linea de registro del informe
+                para exportar. La linea del registro se resaltará en color
+                celeste.
+              </li>
+              <li>
+                5. Dar clic en el menú informe en la parte superior de la
+                ventana de Survey123. Se desplegará una ventana emergente en la
+                cual deberá completar la siguiente información:
+              </li>
+              <li>
+                5.1. Elegir los registros a incluir: Solo registros
+                seleccionados
+              </li>
+              <li>
+                5.2. Seleccionar una plantilla: dejar la plantilla por defecto
+                TCUAU-InformeFinalEstudiante-Survey123-20240809.docx
+              </li>
+              <li>
+                5.3. Configuración de salida, en el Nombre de informe suprimir
+                el nombre por defecto y pegar la siguiente información:
+                ${id_estudiante}-IF. ${nombre_estudiante}
+              </li>
+              <li>
+                5.4. Formato: Seleccionar Formato de documento portatil (.pdf)
+              </li>
+              <li>
+                6. Dar clic en Generar. Esperar que se genere el documento en
+                PDF y subirlo en el espacio correspondiente del Campus Virtual
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
     <div class="footer-bottom">
       <div class="contenido-footer">
-        <div class="contacto">
-          <h2>Contacto</h2>
-          <div class="contacto-email">
-            <h3>Email</h3>
-            <p>arboricultura@utn.ac.cr</p>
+        <div class="caja-contenido">
+          <div class="contacto">
+            <h2>Contacto</h2>
+            <div class="contacto-email">
+              <h3>Email</h3>
+              <p>arboricultura@utn.ac.cr</p>
+            </div>
+            <div class="contacto-telefono">
+              <h3>Teléfono</h3>
+              <p>+506 26683550</p>
+            </div>
           </div>
-          <div class="contacto-telefono">
-            <h3>Teléfono</h3>
-            <p>+506 26683550</p>
+          <div class="ubicacion">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.5514058214253!2d-85.08756072533592!3d10.430573389697935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9ffae9f090abdb%3A0x601e4130983c5ef2!2sUTN!5e1!3m2!1ses!2scr!4v1741070529697!5m2!1ses!2scr"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="logos">
+            <img src="../images/logo-utn.png" width="82%" alt="" />
+            <img src="../images/Logotipo TCU blanco.png" width="82%" alt="" />
           </div>
         </div>
-        <div class="ubicacion">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.5514058214253!2d-85.08756072533592!3d10.430573389697935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9ffae9f090abdb%3A0x601e4130983c5ef2!2sUTN!5e1!3m2!1ses!2scr!4v1741070529697!5m2!1ses!2scr"
-            width="400"
-            height="300"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div class="caja-copy">
+          <p class="copyright">
+            © 2025 Universidad Técnica Nacional. Todos los derechos reservados.
+          </p>
         </div>
-        <div class="logos">
-          <img src="../images/logo-utn.png" width="82%" alt="" />
-          <img src="../images/Logotipo TCU blanco.png" width="82%" alt="" />
-        </div>
+        <br />
       </div>
-
-      <img src="../images/footer.jpg" width="100%" height="100%" alt="" />
+      <img src="/images/footer.jpg" width="100%" height="100%" alt="" />
     </div>
   </body>
   <script src="../JS/petalos-animacion.js"></script>
