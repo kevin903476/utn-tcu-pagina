@@ -15,7 +15,7 @@ function createLeaf() {
     }
 
     const leaf = document.createElement("img");
-    leaf.src = "../images/flor.svg"; 
+    leaf.src = "../images/hoja.svg"; 
     leaf.classList.add("leaf");
     container.appendChild(leaf); // Añadir al contenedor, no al body
     
