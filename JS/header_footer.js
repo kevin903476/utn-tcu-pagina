@@ -26,6 +26,8 @@ header.innerHTML = `
             <li><a href="../HTMLS/informe.html">Informe</a></li>
             </ul>
           </li>
+          
+          <li><a href="../HTMLS/areas.html">Areas de trabajo</a></li>
           <li><a href="../HTMLS/nosotros.html">Nosotros</a></li>
           <li><a href="../HTMLS/contacto.html">Contacto</a></li>
         </ul>
